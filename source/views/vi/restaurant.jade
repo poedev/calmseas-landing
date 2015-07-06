@@ -1,0 +1,26 @@
+extends ../layouts/vi-layout
+
+block vars
+  -title = 'Nhà hàng & Quầy cà phê'
+  -bodyClass = 'home'
+  -menuIndex = 0
+
+block container
+  #main-slider.homepage
+    .slider-container(data-home-slider)
+      .slide(data-url="images/photos/bar1.jpg")
+      .slide(data-url="images/photos/bar2.jpg")
+      .slide(data-url="images/photos/bar3.jpg")
+      .slide(data-url="images/photos/bar4.jpg")
+      .slider-nav
+        .arrow.prev
+        .arrow.next
+  #page-info
+    .outer
+      h2 Nhà hàng & Quầy cà phê
+      .content(data-mcscrollbar)
+        p + Nhà hàng
+        p Những trải nghiệm ẩm thực đặc biệt chỉ có tại phố biển Nha Trang đến các đặc trưng vùng miền Việt Nam cũng như Á, Âu, hay những thực đơn dành riêng cho trẻ nhỏ tại Khách Sạn Calm Sea sẽ đem đến cho du khách sự lựa chọn hài lòng nhất theo từng Gu riêng của mình.
+        p + Quầy cà phê
+        p Đến với sự thư thái nhất trong tâm hồn khi được tận hưởng tách café thơm ngon đầy nghệ thuật; giữa không gian sang trọng mà lãng mạn, riêng tư được bày trí khéo léo của Calm Sea; với tầm nhìn hướng biển tuyệt đẹp để đón ánh bình minh hay chiêm nghiệm chiều hoàng hôn màu tím từ đại dương,…, chắc chắn sẽ để lại ấn tượng đầy thi vị khó quên trong lòng Du khách. 
+

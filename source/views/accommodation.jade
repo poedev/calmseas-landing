@@ -1,0 +1,25 @@
+extends layouts/layout
+
+block vars
+  -title = 'Accommodation'
+  -bodyClass = 'home'
+  -menuIndex = 0
+
+block container
+  #main-slider.homepage
+    .slider-container(data-home-slider)
+      .slide(data-url="images/photos/room1.jpg")
+      .slide(data-url="images/photos/room2.jpg")
+      .slide(data-url="images/photos/room3.jpg")
+      .slide(data-url="images/photos/room4.jpg")
+      .slider-nav
+        .arrow.prev
+        .arrow.next
+  #page-info
+    .outer
+      h2 ACCOMMODATION
+      .content(data-mcscrollbar)
+        p With rooms ranging from a generous 24 sq.m to our luxurious ocean front pool villas with over 34sq.m, we have accommodations to suit everyone.
+        p Our rooms are designed in line with our philosophy of Natural Living, with locally sourced materials, culturally sensitive interior designs and meticulous attention to detail. What we are most proud of are the thoughtful extra touches you don’t expect... Little surprises that make the difference between a comfortable stay and a lifelong memory to treasure.
+
+

@@ -1,0 +1,32 @@
+extends ../layouts/vi-layout
+
+block vars
+  -title = 'TIỆN ÍCH'
+  -bodyClass = 'home'
+  -menuIndex = 0
+
+block container
+  #main-slider.homepage
+    .slider-container(data-home-slider)
+      .slide(data-url="images/photos/fac1.jpg")
+      .slide(data-url="images/photos/fac2.jpg")
+      .slide(data-url="images/photos/fac3.jpg")
+      .slide(data-url="images/photos/fac4.jpg")
+      .slider-nav
+        .arrow.prev
+        .arrow.next
+  #page-info
+    .outer
+      h2 TIỆN ÍCH
+      .content(data-mcscrollbar)
+        p 1.Phục vụ ăn sáng tại phòng
+        p Nhằm mang tới cho du khách  những trải nghiệm tuyệt vời nhất trong kỳ nghỉ tại khách sạn BiỂn Êm, chúng tôi luôn sẵn sàng phục vụ ăn sáng tận phòng với menu thức ăn đa dạng, trình bày đẹp mắt.
+        p Thời gian phục vụ:  Từ 6:00 giờ tới 10:00 giờ
+        p 2. Dịch vụ đưa đón du khách
+        p Khách sạn chúng tôi cung cấp dịch vụ đón tiễn sân bay dành cho du khách đến du lịch và công tác tại Nha Trang. Với nhiều năm kinh nghiệm, hiểu biết địa phương và nhu cầu của du khách, chúng tôi cung cấp dịch vụ với phương châm lấy chất lượng hàng đầu.
+        p 3.Thư giãn mát – xa chân
+        p Khách sạn Biển Êm kính mời quý khách trải nghiệm những giây phút thư giãn, giảm căng thẳng sau những chuyến đi dài tại khu Massage của khách sạn, tọa lạc tại tầng 17 của khách sạn.
+        p Mát – xa chân : 60 phút
+        p 4.Quầy lưu niệm tiện ích: Quý khách có thể tìm thấy sản vật, đặc sản của thành phố biển Nha Trang hay quà tặng ý nghĩa cho bạn bè và người thân tại cửa hàng lưu niệm của khách sạn .
+
+

@@ -1,0 +1,24 @@
+extends ../layouts/vi-layout
+
+block vars
+  -title = 'Khu đậu xe'
+  -bodyClass = 'home'
+  -menuIndex = 0
+
+block container
+  #main-slider.homepage
+    .slider-container(data-home-slider)
+      .slide(data-url="images/photos/gym1.jpg")
+      .slide(data-url="images/photos/gym2.jpg")
+      .slide(data-url="images/photos/gym3.jpg")
+      .slide(data-url="images/photos/gym4.jpg")
+      .slider-nav
+        .arrow.prev
+        .arrow.next
+  #page-info
+    .outer
+      h2 Khu đậu xe
+      .content(data-mcscrollbar)
+        p Sở hữu chiều dài lên đến 72m ngay trước mặt tiền đối diện Khách Sạn, với sự sang trọng và thoáng mát, khu đậu xe riêng của Calm Sea không chỉ đem đem đến sự tiện lợi và khác biệt khi đỗ mà còn đảm bảo xe của Du khách được chăm sóc với chất lượng tốt nhất.
+
+

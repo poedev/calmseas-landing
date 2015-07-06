@@ -1,0 +1,29 @@
+extends ../layouts/vi-offer-layout
+
+block vars
+  -title = 'Liên hệ'
+  -bodyClass = 'home'
+  -menuIndex = 0
+
+block container
+  #contact-container
+    .ct-wrap.contact-form
+      .outer
+        h2 Gửi lời nhắn
+        form(action="#")
+          input(type="text", placeholder="Tên của bạn")
+          input(type="text", placeholder="Email của bạn")
+          textarea(placeholder="Nội dung lời nhắn")
+          input(type="submit", value="GỬI")
+    .ct-wrap.contact-info
+      .card 
+        .outer
+          h2 Địa chỉ khách sạn
+          ul.info
+            li.address 99 Phạm Văn Đồng - Vĩnh Hải - Nha Trang - Khánh Hoà
+            li.phone ĐT. (+84) (058) 3543 888
+            li.phone ĐT. (+84) (058) 3540 209
+            li.email Email. info@calmseashotel.com.vn
+            li.opentime Mở cửa 24/7
+          iframe(frameborder="0", src="https://www.google.com/maps/embed?key=AIzaSyB3uqHUhv3mLckXYMGvCDXB6F9WCUpsL6A&pb=!1m18!1m12!1m3!1d974.65087690638!2d109.20191279718257!3d12.27508887145052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0xe24a7a48d7f8d0a2!2sCalm+Seas!5e0!3m2!1svi!2s!4v1433037556092")
+    .clear

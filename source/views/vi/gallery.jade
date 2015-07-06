@@ -1,0 +1,180 @@
+extends ../layouts/vi-offer-layout
+
+block vars
+  -title = 'Thư viện ảnh'
+  -bodyClass = 'home'
+  -menuIndex = 0
+
+block container
+  #gallery-container
+    .gallery-wrap(data-gslider=".slider-1")
+      .outer
+        .inner
+          h2.title Phòng khách sạn
+          .des
+          .photo-wrap
+            img(src="images/photos/room3.jpg", title="", alt="Suite room offer ")
+          .read-more KHÁM PHÁ
+    .gallery-wrap(data-gslider=".slider-2")
+      .outer
+        .inner
+          h2.title Nhà hàng và Bar
+          .des
+          .photo-wrap
+            img(src="images/photos/restaurant.jpg", title="", alt="Suite room offer ")
+          .read-more KHÁM PHÁ
+    .gallery-wrap(data-gslider=".slider-3")
+      .outer
+        .inner
+          h2.title Tiện ích
+          .des
+          .photo-wrap
+            img(src="images/photos/facility1.jpg", title="", alt="Suite room offer ")
+          .read-more KHÁM PHÁ
+    .gallery-wrap(data-gslider=".slider-4")
+      .outer
+        .inner
+          h2.title Bãi biển
+          .des
+          .photo-wrap
+            img(src="images/photos/beach1.jpg", title="", alt="Suite room offer ")
+          .read-more KHÁM PHÁ
+    .clear
+  .gallery-slider.slider-1.onready
+    .outer
+      .close Đóng
+      .slider#slide1(data-flex-slider, data-thumb=".thumb-1")
+        ul.slides
+          li
+            img(src="images/photos/room1.jpg", alt="Hình ảnh phòng 1")
+          li
+            img(src="images/photos/room2.jpg", alt="Hình ảnh phòng 2")
+          li
+            img(src="images/photos/room3.jpg", alt="Hình ảnh phòng 3")
+          li
+            img(src="images/photos/room4.jpg", alt="Hình ảnh phòng 4")
+          li
+            img(src="images/photos/room5.jpg", alt="Hình ảnh phòng 5")
+          li
+            img(src="images/photos/room6.jpg", alt="Hình ảnh phòng 6")
+          li
+            img(src="images/photos/room7.jpg", alt="Hình ảnh phòng 7")
+          li
+            img(src="images/photos/room8.jpg", alt="Hình ảnh phòng 8")
+      .thumbs.thumb-1
+        ul.slides
+          li
+            img(src="images/photos/room1.jpg", alt="Hình ảnh phòng 1")
+          li
+            img(src="images/photos/room2.jpg", alt="Hình ảnh phòng 2")
+          li
+            img(src="images/photos/room3.jpg", alt="Hình ảnh phòng 3")
+          li
+            img(src="images/photos/room4.jpg", alt="Hình ảnh phòng 4")
+          li
+            img(src="images/photos/room5.jpg", alt="Hình ảnh phòng 5")
+          li
+            img(src="images/photos/room6.jpg", alt="Hình ảnh phòng 6")
+          li
+            img(src="images/photos/room7.jpg", alt="Hình ảnh phòng 7")
+          li
+            img(src="images/photos/room8.jpg", alt="Hình ảnh phòng 8") 
+  .gallery-slider.slider-2.onready
+    .outer
+      .close Đóng
+      .slider#slide2(data-flex-slider, data-thumb=".thumb-2")
+        ul.slides
+          li
+            img(src="images/photos/bar1.jpg", alt="Hình ảnh nhà hàng 1")
+          li
+            img(src="images/photos/bar2.jpg", alt="Hình ảnh nhà hàng 2")
+          li
+            img(src="images/photos/bar3.jpg", alt="Hình ảnh nhà hàng 3")
+          li
+            img(src="images/photos/bar4.jpg", alt="Hình ảnh nhà hàng 4")
+          li
+            img(src="images/photos/bar5.jpg", alt="Hình ảnh nhà hàng 5")
+          li
+            img(src="images/photos/bar6.jpg", alt="Hình ảnh nhà hàng 6")
+          li
+            img(src="images/photos/bar7.jpg", alt="Hình ảnh nhà hàng 7")
+      .thumbs.thumb-2
+        ul.slides
+          li
+            img(src="images/photos/bar1.jpg", alt="Hình ảnh nhà hàng 1")
+          li
+            img(src="images/photos/bar2.jpg", alt="Hình ảnh nhà hàng 2")
+          li
+            img(src="images/photos/bar3.jpg", alt="Hình ảnh nhà hàng 3")
+          li
+            img(src="images/photos/bar4.jpg", alt="Hình ảnh nhà hàng 4")
+          li
+            img(src="images/photos/bar5.jpg", alt="Hình ảnh nhà hàng 5")
+          li
+            img(src="images/photos/bar6.jpg", alt="Hình ảnh nhà hàng 6")
+          li
+            img(src="images/photos/bar7.jpg", alt="Hình ảnh nhà hàng 7")
+  .gallery-slider.slider-3.onready
+    .outer
+      .close Đóng
+      .slider#slide3(data-flex-slider, data-thumb=".thumb-3")
+        ul.slides
+          li
+            img(src="images/photos/fac1.jpg", alt="Hình ảnh tiện ích 1")
+          li
+            img(src="images/photos/fac2.jpg", alt="Hình ảnh tiện ích 2")
+          li
+            img(src="images/photos/fac3.jpg", alt="Hình ảnh tiện ích 3")
+          li
+            img(src="images/photos/fac4.jpg", alt="Hình ảnh tiện ích 4")
+          li
+            img(src="images/photos/fac5.jpg", alt="Hình ảnh tiện ích 5")
+          li
+            img(src="images/photos/fac6.jpg", alt="Hình ảnh tiện ích 6")
+      .thumbs.thumb-3
+        ul.slides
+          li
+            img(src="images/photos/fac1.jpg", alt="Hình ảnh tiện ích 1")
+          li
+            img(src="images/photos/fac2.jpg", alt="Hình ảnh tiện ích 2")
+          li
+            img(src="images/photos/fac3.jpg", alt="Hình ảnh tiện ích 3")
+          li
+            img(src="images/photos/fac4.jpg", alt="Hình ảnh tiện ích 4")
+          li
+            img(src="images/photos/fac5.jpg", alt="Hình ảnh tiện ích 5")
+          li
+            img(src="images/photos/fac6.jpg", alt="Hình ảnh tiện ích 6")
+  .gallery-slider.slider-4.onready
+    .outer
+      .close Đóng
+      .slider#slide4(data-flex-slider, data-thumb=".thumb-4")
+        ul.slides
+          li
+            img(src="images/photos/fac1.jpg", alt="Hình ảnh bải biển 1")
+          li
+            img(src="images/photos/fac2.jpg", alt="Hình ảnh bải biển 2")
+          li
+            img(src="images/photos/fac3.jpg", alt="Hình ảnh bải biển 3")
+          li
+            img(src="images/photos/fac4.jpg", alt="Hình ảnh bải biển 4")
+          li
+            img(src="images/photos/fac5.jpg", alt="Hình ảnh bải biển 5")
+          li
+            img(src="images/photos/fac6.jpg", alt="Hình ảnh bải biển 6")
+      .thumbs.thumb-4
+        ul.slides
+          li
+            img(src="images/photos/fac1.jpg", alt="Hình ảnh bải biển 1")
+          li
+            img(src="images/photos/fac2.jpg", alt="Hình ảnh bải biển 2")
+          li
+            img(src="images/photos/fac3.jpg", alt="Hình ảnh bải biển 3")
+          li
+            img(src="images/photos/fac4.jpg", alt="Hình ảnh bải biển 4")
+          li
+            img(src="images/photos/fac5.jpg", alt="Hình ảnh bải biển 5")
+          li
+            img(src="images/photos/fac6.jpg", alt="Hình ảnh bải biển 6")
+
+

@@ -1,0 +1,63 @@
+header#header
+
+  #main-header
+    a(href="/")
+      #logo
+        .contact.contact-phone
+          span.up
+            span For reservation
+          span.down
+            span (+84)
+            span (058)
+            span 3542
+            span 777
+    .nav
+      +nav([
+        {href: "index.html", id:"home", title: "ABOUT US"},
+        {href: "facility.html", id:"fac", title: "FACILITIES"},
+        {href: "accommodation.html", id:"accom", title: "ACCOMMODATION"},
+        {href: "restaurant.html", id:"res", title: "RESTAURANT & BAR"},
+        {href: "offers.html", id:"offer", title: "SPECIAL OFFERS"}
+      ])
+    .sub-nav.accom
+      +nav([
+        {href: "accommodation-standard-single-city-view.html", title: "STANDARD"},
+        {href: "accommodation-deluxe.html", title: "DELUXE"},
+        {href: "accommodation-suite-sea-view.html", title: "SUIT SEA VIEW"}
+      ])
+    .sub-nav.facili
+      +nav([
+        {href: "facility-room-with-meal.html", title: "ROOM WITH MEALS"},
+        {href: "facility-airport-transfer.html", title: "AIRPORT TRANSFER"},
+        {href: "facility-massage.html", title:  "MASSAGE"},
+        {href: "facility-gym.html", title: "GYM"},
+      ])
+    .lang-sel
+      .selected
+        img(src="images/icons/eng-flag.png", alt="english")
+      .selector
+        ul
+          li
+            a(href="javascript:void(0)", title="VI")
+              img(src="images/icons/viet-flag.png", alt="vietnamese")
+          li
+            a(href="javascript:void(0)", title="EN")
+              img(src="images/icons/eng-flag.png", alt="english")
+    .mobile-nav
+      .switch-btn
+#mobile-nav-content
+  .inner
+    +nav([
+      {href: "restaurant.html", title: "RESTAURANT & BAR"},
+      {href: "offers.html", title : "SPECIAL OFFERS"},
+      {href: "", title: "ABOUT US"},
+      {href: "facility.html", title: "FACILITIES"},
+      {href: "accommodation.html", title: "ACCOMMODATION"}
+    ])
+    .add-nav
+      +nav([
+        {href: "gallery.html", title: "Gallery"},
+        {href: "contact.html", title: "Contact"},
+        {href: "#", title: "Recruitment"}
+      ])(class="add-nav")
+

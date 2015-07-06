@@ -1,0 +1,24 @@
+extends ../layouts/vi-layout
+
+block vars
+  -title = 'Cung cấp xe Ô tô tự lái'
+  -bodyClass = 'home'
+  -menuIndex = 0
+
+block container
+  #main-slider.homepage
+    .slider-container(data-home-slider)
+      .slide(data-url="images/photos/gym1.jpg")
+      .slide(data-url="images/photos/gym2.jpg")
+      .slide(data-url="images/photos/gym3.jpg")
+      .slide(data-url="images/photos/gym4.jpg")
+      .slider-nav
+        .arrow.prev
+        .arrow.next
+  #page-info
+    .outer
+      h2  Cung cấp xe Ô tô tự lái
+      .content(data-mcscrollbar)
+        p Thỏa trí khám phá của chính mình, hay cùng người thân và bạn bè rong ruổi đến những miền yêu mới sẽ thật tuyệt vời hơn với chiếc ô tô sang trọng mà Calm Sea cung cấp đến Du khách. Với nhiều tùy chọn về dòng xe đảm bảo chất lượng của Toyota từ 5 đến 7 chỗ, Calm Sea đặc biệt trao chiếc chìa khóa để Du khách của mình được làm chủ và mở ra những chân trời du lịch ý nghĩa.
+
+

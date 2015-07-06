@@ -1,0 +1,32 @@
+extends layouts/layout
+
+block vars
+  -title = 'Facilities'
+  -bodyClass = 'home'
+  -menuIndex = 0
+
+block container
+  #main-slider.homepage
+    .slider-container(data-home-slider)
+      .slide(data-url="images/photos/fac1.jpg")
+      .slide(data-url="images/photos/fac2.jpg")
+      .slide(data-url="images/photos/fac3.jpg")
+      .slide(data-url="images/photos/fac4.jpg")
+      .slider-nav
+        .arrow.prev
+        .arrow.next
+  #page-info
+    .outer
+      h2 FACILITIES
+      .content(data-mcscrollbar)
+        p 1. Room with meals
+        p With purpose, each moment stay at Calm Seas Hotel is each amazing moment. We always ready to server Room Service. Guest can enjoy delicious meals in either Vietnamese or European Cuisines with our go out.
+        p Time : From 6:00 to 10:00 am
+        p 2.Car pick – up and airport transfer
+        p Our hotel provides Cam Ranh Airport Transfer for all business and leisure guests visiting Nha Trang.With our expertise and experience of the local services, guests’ demands, our hotel provides the secure and quality service and various options upon guest’s request.
+        p 3.Foot massage
+        p Calm Seas Hotel invites you to experience a reprieve after a long and tiring travel with a well-deserved massage services located the 17th floor of the hotel.
+        p Foot massage (Time taken: 60 minutes)
+        p 4.Souvenir shop : At the Hotel’s Souvenir shop, you can find “a memento of your visit” or just meaningful gifts to your friends and relatives.
+
+

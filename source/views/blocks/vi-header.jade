@@ -1,0 +1,75 @@
+header#header
+  #main-header
+    a(href="vi/index.html")
+      #logo
+        .contact.contact-phone
+          span.up
+            span Đặt phòng
+          span.down
+            span (+84)
+            span (058)
+            span 3542
+            span 777
+    .nav
+      +nav([
+        {href: "vi/index.html", id:"home", title: "GIỚI THIỆU"},
+        {href: "vi/facility.html", id:"fac", title: "TIỆN ÍCH"},
+        {href: "vi/accommodation.html", id:"accom", title: "HẠNG PHÒNG"},
+        {href: "vi/restaurant.html", id:"res", title: "NHÀ HÀNG & BAR"},
+        {href: "vi/offers.html", id:"offer", title: "ƯU ĐÃI ĐẶC BIỆT"}
+      ])
+    .sub-nav.accom
+      +nav([
+        {href: "vi/accommodation-standard-single-city-view.html", id: "standard", title: "STANDARD"},
+        {href: "vi/accommodation-deluxe.html", id: "deluxe", title: "DELUXE"},
+        {href: "vi/accommodation-suite-sea-view.html", id: "suit", title: "SUIT SEA VIEW"}
+      ])
+    .sub-nav.facili
+      +nav([
+        {href: "vi/facility-room-with-meal.html", id: "meal", title: "Phục vụ ăn sáng tại phòng"},
+        {href: "vi/facility-airport-transfer.html", id: "trans", title: "Dịch vụ đưa đón du khách"},
+        {href: "vi/facility-massage.html", id: "mass", title:  "Massage"},
+        {href: "vi/facility-private-beach.html", id: "beach", title: "Bãi tắm riêng"},
+        {href: "vi/facility-parking.html", id: "park", title: "Khu đậu xe"},
+        {href: "vi/facility-oto-rent.html", id: "oto", title: "Cung cấp xe ô tô tự lái"}
+      ])
+    .lang-sel(style="display: none")
+      .selected
+        img(src="images/icons/viet-flag.png", alt="vietnamese")
+      .selector
+        ul
+          li
+            a(href="javascript:void(0)", title="VI")
+              img(src="images/icons/viet-flag.png", alt="vietnamese")
+          li
+            a(href="javascript:void(0)", title="EN")
+              img(src="images/icons/eng-flag.png", alt="english")
+    .mobile-nav
+      .switch-btn
+#mobile-nav-content
+  .inner
+    +nav([
+      {href: "vi/index.html", id:"home", title: "GIỚI THIỆU"},
+      {href: "vi/facility.html", id:"fac", title: "TIỆN ÍCH", itemsMenu:[
+        {href: "vi/facility-room-with-meal.html", id: "meal", title: "Phục vụ ăn sáng tại phòng"},
+        {href: "vi/facility-airport-transfer.html", id: "trans", title: "Dịch vụ đưa đón du khách"},
+        {href: "vi/facility-massage.html", id: "mass", title:  "Massage"},
+        {href: "vi/facility-private-beach.html", id: "beach", title: "Bãi tắm riêng"},
+        {href: "vi/facility-parking.html", id: "park", title: "Khu đậu xe"},
+        {href: "vi/facility-oto-rent.html", id: "oto", title: "Cung cấp xe ô tô tự lái"}
+      ]},
+      {href: "vi/accommodation.html", id:"accom", title: "HẠNG PHÒNG", itemsMenu: [
+        {href: "vi/accommodation-standard-single-city-view.html", id: "standard", title: "STANDARD"},
+        {href: "vi/accommodation-deluxe.html", id: "deluxe", title: "DELUXE"},
+        {href: "vi/accommodation-suite-sea-view.html", id: "suit", title: "SUIT SEA VIEW"}
+      ]},
+      {href: "vi/restaurant.html", id:"res", title: "NHÀ HÀNG VÀ BAR"},
+      {href: "vi/offers.html", id:"offer", title : "ƯU ĐÃI ĐẶC BIỆT"}
+    ])
+    .add-nav
+    //  +nav([
+    //    {href: "vi/gallery.html", title: "Thư viện ảnh"},
+    //    {href: "vi/contact.html", title: "Liên hệ"},
+    //    {href: "vi/#", title: "Tuyển dụng"}
+    //  ])(class="add-nav")
+

@@ -1,0 +1,33 @@
+extends layouts/layout
+
+block vars
+  -title = 'Restaurant & Bar'
+  -bodyClass = 'home'
+  -menuIndex = 0
+
+block container
+  #main-slider.homepage
+    .slider-container(data-home-slider)
+      .slide(data-url="images/photos/bar1.jpg")
+      .slide(data-url="images/photos/bar2.jpg")
+      .slide(data-url="images/photos/bar3.jpg")
+      .slide(data-url="images/photos/bar4.jpg")
+      .slider-nav
+        .arrow.prev
+        .arrow.next
+  #page-info
+    .outer
+      h2 RESTAURANT & BAR
+      .content(data-mcscrollbar)
+        p 1.Restaurant
+        p Breakfast
+        p Monday to Friday: 6.00 am – 10.30 am.
+        p Saturday and Sunday: 5.00 am – 10.00 am. 
+        p A la cart lunch :Traditional Vietnamese cuisine
+        p Monday to Sunday
+        p Serving hours: 12am – 4pm
+        p Menu changes everyday
+        p 2.Coffee shop
+        p Enjoy the taste of your coffee in its cup of distinctive porcelain in the pleasant atmosphere of the Lobbybar. Calm Seas Café locates at 3rd floor for customer to choosing drink from fesh juice to beer, beside, you can choose orther appertizers.
+
+

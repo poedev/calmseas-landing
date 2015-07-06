@@ -1,0 +1,23 @@
+extends ../layouts/vi-layout
+
+block vars
+  -title = 'Thư giãn – Massage chân'
+  -bodyClass = 'home'
+  -menuIndex = 0
+
+block container
+  #main-slider.homepage
+    .slider-container(data-home-slider)
+      .slide(data-url="images/photos/massage1.jpg")
+      .slide(data-url="images/photos/massage2.jpg")
+      .slide(data-url="images/photos/massage3.jpg")
+      .slide(data-url="images/photos/massage4.jpg")
+      .slider-nav
+        .arrow.prev
+        .arrow.next
+  #page-info
+    .outer
+      h2  Thư giãn – Massage chân
+      .content(data-mcscrollbar)
+        p Nhằm đem lại sự dẻo dai, khỏe khoắn cho đôi chân của Du khách cho những hành trình khám phá mới, dịch vụ Massage chân tại Khách sạn sẽ khiến bạn trở nên hoàn toàn thư thái và tràn đầy năng lượng để tiếp tục thưởng ngoạn vẻ đẹp của Đại dương từ Calm Sea.
+

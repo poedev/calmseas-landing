@@ -1,0 +1,22 @@
+extends ../layouts/vi-layout
+
+block vars
+  -title = 'Phục vụ ăn sáng tại phòng'
+  -bodyClass = 'home'
+  -menuIndex = 0
+
+block container
+  #main-slider.homepage
+    .slider-container(data-home-slider)
+      .slide(data-url="images/photos/meal1.jpg")
+      .slide(data-url="images/photos/meal2.jpg")
+      .slide(data-url="images/photos/meal3.jpg")
+      .slide(data-url="images/photos/meal4.jpg")
+      .slider-nav
+        .arrow.prev
+        .arrow.next
+  #page-info
+    .outer
+      h2  Phục vụ ăn sáng tại phòng
+      .content(data-mcscrollbar)
+        p Thưởng thức cuộc sống riêng theo cách của bạn, với bình minh thức dậy đón ánh mặt trời đầu tiên từ biển cùng người thân yêu; hay đơn giản là một mình bạn làm chủ cũng sẽ rất tuyệt vời và đặc biệt với bữa sáng ngay trong chính không gian riêng tư mà khoáng đạt được Calm Sea bày trí ấn tượng theo tùy chọn của Du khách trong khoảng thời gian từ 6:00 đến 10:00.

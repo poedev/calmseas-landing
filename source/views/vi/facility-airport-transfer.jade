@@ -1,0 +1,24 @@
+extends ../layouts/vi-layout
+
+block vars
+  -title = 'Airport Transfer'
+  -bodyClass = 'home'
+  -menuIndex = 0
+
+block container
+  #main-slider.homepage
+    .slider-container(data-home-slider)
+      .slide(data-url="images/photos/transfer1.jpg")
+      .slide(data-url="images/photos/transfer2.jpg")
+      .slide(data-url="images/photos/transfer3.jpg")
+      .slide(data-url="images/photos/transfer4.jpg")
+      .slider-nav
+        .arrow.prev
+        .arrow.next
+  #page-info
+    .outer
+      h2  Dịch vụ đưa đón du khách
+      .content(data-mcscrollbar)
+        p Với đội ngũ nhân viên chuyên nghiệp, thấu cảm vị trí địa lý cũng như bản sắc Xứ Trầm cùng phương tiện sang trọng, có sẵn sẽ cùng Du khách Khám phá Nha Trang xinh đẹp, cũng như đón tiễn tại sân bay, ga tàu theo yêu cầu của Quý Khách.
+
+
