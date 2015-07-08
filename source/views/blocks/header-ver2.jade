@@ -1,0 +1,31 @@
+header#header
+  .left-strian
+  .right-strian
+  .center-container
+    .logo
+      img(src="images/texture/logo.png", alt="logo calmseas hotel")
+    .nav-wrap
+      .nav
+        +nav([
+          {href: "index.html", id:"home", title: "ABOUT US"},
+          {href: "facility.html", id:"fac", title: "FACILITIES"},
+          {href: "accommodation.html", id:"accom", title: "ACCOMMODATION"},
+          {href: "restaurant.html", id:"res", title: "RESTAURANT"},
+          {href: "offers.html", id:"offer", title: "SPECIAL OFFERS"}
+        ])
+    .sub-nav.accom
+      +nav([
+        {href: "accommodation-standard-single-city-view.html", title: "STANDARD"},
+        {href: "accommodation-deluxe.html", title: "DELUXE"},
+        {href: "accommodation-suite-sea-view.html", title: "SUIT SEA VIEW"}
+      ])
+    .sub-nav.facili
+      +nav([
+        {href: "facility-room-with-meal.html", title: "ROOM WITH MEALS"},
+        {href: "facility-airport-transfer.html", title: "AIRPORT TRANSFER"},
+        {href: "facility-massage.html", title:  "MASSAGE"},
+        {href: "facility-gym.html", title: "GYM"},
+      ])
+.main-banner(style="background-image: url(images/photos/bar4.jpg);background-size: cover")
+  .left-strian
+  .right-strian

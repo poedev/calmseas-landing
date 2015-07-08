@@ -1,0 +1,262 @@
+// Responsive
+// Resolutions variables
+@screen-desktop: 1200px;
+@screen-landTab: 1024px;
+@screen-portTab: 900px;
+@screen-ipad: 768px;
+@screen-smartphone: 720px;
+@screen-firstgen: 480px;
+@screen-lowers: 320px;
+
+@custom-tab: 960px;
+@custom-tab2: 640px;
+@custom-mobile: 480px;
+@custom-mobile1: 600px;
+
+@custom-tab-height: 600px;
+
+@media screen and (max-width: @screen-desktop) {
+	#main-header {
+		#logo {
+			.contact-phone {
+				width: 150px;
+				padding-top: 3px;
+				line-height: 18px;
+				.up, .down {display: block}
+			}
+		}
+	}
+}
+
+@media screen and (max-height: @custom-tab-height) {
+	#booking-widget {landtab
+		.booking-form {
+			overflow: scroll;
+		}
+	}
+}
+@media screen and (max-width: @screen-landTab) {
+	#header {
+		#logo {
+			left: 20px;
+		}
+	}
+}
+
+@media screen and (max-width: @custom-tab) {
+	#header {
+		height: 45px;
+		#main-header {
+			height: 45px;
+			margin-top: 0px;
+			background-color: #ffffff;
+			border-top: 1px solid #eeeeee;
+			.lang-sel {
+				margin-right: 58px;
+			}
+			.nav {
+				display: none;
+			}
+			.mobile-nav {
+			  display: block;
+			}
+			.sub-nav.active {
+				display: none;
+			}
+		}
+		#logo {
+			.contact-phone {
+				width: 240px;
+				padding-top: 0px;
+				line-height: 44px;
+				.up, .down {display: inline}
+			}
+		}
+	}
+}
+
+@media screen	and (max-width: @custom-tab2) {
+	#mobile-nav-content {
+		.add-nav {
+			display: inline-block;
+		}
+	}
+	#available-calendar-widget {
+	  .calendar-wrap {
+	  	.calendar-month-picker {
+	  		.month {
+	  			.full {
+	  				display: none;
+	  			}
+	  			.short {
+	  				display: block;
+	  				padding-top: 20%;
+	  				.name {
+	  					font-size: 0.8em;
+	  				}
+	  				.year {
+	  					font-size: 0.7em;
+	  				}
+	  			}
+	  		}
+	  	}
+	    .calendar-date-title {
+	      .day {
+	      	.short {display: block}
+	      	.full {display: none}
+	      }
+	     }
+	     .calendar-days-wrap {
+		    .day {
+		      .cont {
+		      	.info {
+		      	  .pre-unit {display: none;}
+		      	  .unit.full {display: none;}
+		      	  .unit.short {display: inline;}
+		      	}
+		      }
+		    }
+		   }
+	   }
+
+	}
+}
+
+@media screen and (max-width: @screen-smartphone) {
+	#footer {
+		#main-footer {
+			.contact {
+			}
+		}
+	}
+
+	#sp-offers-container {
+		.offer-wrap {
+			width: 96%;
+			margin: 10px 2%;
+			display: none;
+			&.for-mobile {
+				display: block;
+			}
+		}
+	}
+	#gallery-container {
+		.gallery-wrap {
+			width: 96%;
+			margin: 10px 2%;
+		}
+	}
+
+}
+
+@media screen and (max-width: @custom-mobile1) {
+	#booking-widget {
+		.wg-btn {
+			left: 15px;
+			top: 100px;
+			right: auto;
+			bottom: auto;
+		}
+		.booking-form {
+			right: auto;
+			left: -250px;
+			&.active {
+				left: 0px;
+				right: auto;
+			}
+		}
+	}
+	#mobile-nav-content {
+		background-color: #ffffff;
+	}
+	#page-info {
+		width: 100%;
+		left:0px;
+		max-width: 100%;
+	}
+
+}
+
+@media screen and (max-width: @custom-mobile) {
+
+	#header {
+		#logo {
+			.contact-phone {
+				width: 150px;
+				padding-top: 3px;
+				line-height: 18px;
+				.up, .down {display: block}
+			}
+		}
+		#sub-header {
+			.contact {
+				&.contact-phone {
+					padding-top: 4px;
+					line-height: 18px;
+					> span {
+						display: block;
+					}
+
+				}
+			}
+		}
+	}
+	#booking-widget {
+		.booking-form {
+			width: 100%;
+			height: 100%;
+			overflow: scroll;
+			right: auto;
+			left: auto;
+			top: -100%;
+			&.active {
+				top: 0px;
+			}
+			.input-wrap {
+				input {
+					&[type="date"] {
+						background-position: 95%;
+					}
+				}
+			}
+		}
+	}
+	.hide-on-mobile {
+		display: none !important;
+	}
+	#available-calendar-widget {
+	  .calendar-wrap {
+	  	.calendar-month-picker {
+	  	}
+	     .calendar-days-wrap {
+		    .day {
+		      .cont {
+		      	.info {
+		      	  height: 18px;
+		      	  &.avai-rooms {
+		      	  	height: 14px;
+		      	  	line-height: 8px;
+		      	  }
+		      	  span {
+			          font-size: 0.7em;
+
+		      	  }
+		      	}
+		      }
+		      .note {
+		      	padding: 8px 2px;
+		      	font-size: 0.7em;
+		      	text-align: center;
+		      	span {
+		      		display: block;
+		      		margin: auto;
+		      	}
+		      }
+		    }
+		   }
+	   }
+	}
+
+}
+
+
