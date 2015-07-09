@@ -1,9 +1,115 @@
 extends layouts/layout-ver2
 
 block vars
-  -title = 'Restaurant & Bar'
-  -bodyClass = 'home'
-  -menuIndex = 0
+	-title = 'Restaurant & Bar'
+	-bodyClass = 'home'
+	-menuIndex = 0
 
 block container
+	.main-banner(style="background-image: url(images/photos/ver2-restaurant1.jpg);background-size: cover")
+		.left-strian
+		.right-strian
+	#main-container
+		h1.main-title 
+			span Calm Seas 
+			br
+			span Comfort & Luxury
+		p.main-desc	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vitae aliquet leo. Aenean dapibus sem vel porttitor maximus. Proin imperdiet, erat sed dictum rhoncus, sem sem ultrices quam, sed auctor tortor ante sed 
+		.row.img-set.set1
+			.cell.col-sm-3.no-pad(style="padding-right: 3px")
+				img(src="images/photos/ver2-restaurant4.jpg" alt="calmseas restaurant")
+			.cell.col-sm-5.no-pad(style="padding-right: 3px")
+				img(src="images/photos/ver2-restaurant3.jpg" alt="calmseas restaurant")
+			.cell.col-sm-4.no-pad
+				img(src="images/photos/ver2-restaurant2.jpg" alt="calmseas restaurant")
 
+		.set-title.col-xs-12
+			.discover 
+				img(src="images/texture/discovery.png" alt="restaurant")
+			.text BUFFET
+		.clearfix
+		.row.img-set.set2
+			.cell.full-height.col-sm-5(style="padding-right: 30px")
+				img(src="images/photos/ver2-restaurant5.jpg" alt="restaurant")
+			.cell.col-sm-7
+				.cell.line1.col-xs-12
+					.cell.col-sm-6
+						img(src="images/photos/ver2-restaurant6.jpg" alt="calmseas restaurant")
+					.cell.col-sm-6
+						.til
+							img(src="images/texture/fresh.png" alt="restaurant")
+						p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vitae aliquet leo. Aenean dapibus sem vel porttitor maximus. Proin imperdiet, erat sed dictum rhoncus, sem sem ultrices quam, sed auctor tortor ante sed turpis. Phasellus eu elit et eros efficitur viverra. Morbi eu placerat orci. Nam nec rutrum est. Aenean tempor sapien posuere lectus consectetur, sed imperdiet elit finibus. Maecenas condimentum congue mi a mattis. Sed commodo porta leo vitae vulputate. 
+					.clearfix
+				.cell.line2.col-xs-12.max-full
+					img(src="images/photos/ver2-restaurant7.jpg" alt="calmseas restaurant")
+				.clearfix
+			.clearfix
+		.set-title.col-xs-12
+			.discover 
+				img(src="images/texture/discovery.png" alt="restaurant")
+			.text A LA CART
+		.clearfix
+		.row.img-set.set2.set2-2
+			.cell.col-sm-4(style="padding-right: 20px")
+				.cell.line3.col-xs-12
+					img(src="images/photos/ver2-restaurant8.jpg" alt="restaurant")				
+				.cell.line4.col-xs-12				
+					.cell.col-xs-12
+						.til
+							img(src="images/texture/taste.png" alt="restaurant")
+						p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vitae aliquet leo. Aenean dapibus sem vel porttitor maximus. Proin imperdiet, erat sed dictum rhoncus, sem sem ultrices quam, sed auctor tortor ante sed turpis. Phasellus eu elit et eros efficitur viverra. Morbi eu placerat orci. Nam nec rutrum est. Aenean tempor sapien posuere lectus consectetur, sed imperdiet elit finibus. Maecenas condimentum congue mi a mattis. Sed commodo porta leo vitae vulputate. 
+			.cell.col-sm-4(style="padding-right: 20px")
+				.cell.line5.col-xs-12
+					img(src="images/photos/ver2-restaurant9.jpg" alt="restaurant")				
+				.cell.line6.col-xs-12
+					img(src="images/photos/ver2-restaurant10.jpg" alt="restaurant")				
+			.cell.full-height.col-sm-4
+				img(src="images/photos/ver2-restaurant11.jpg" alt="restaurant")
+			.clearfix
+		.clearfix
+		.set-title.col-xs-12
+			.discover 
+				img(src="images/texture/discovery.png" alt="restaurant")
+			.text LUNCH
+		.clearfix
+		.row.img-set.set2.set2-2
+			.cell.full-height.col-sm-4(style="padding-right: 20px")
+				img(src="images/photos/ver2-restaurant12.jpg" alt="restaurant")
+			.cell.col-sm-5(style="padding-right: 20px")
+				.cell.line7.col-xs-12
+					.cell.col-xs-12
+						.til
+							img(src="images/texture/delicious.png" alt="restaurant")
+						p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vitae aliquet leo. Aenean dapibus sem vel porttitor maximus. Proin imperdiet, erat sed dictum rhoncus, sem sem ultrices quam, sed auctor tortor ante sed turpis. Phasellus eu elit et eros efficitur viverra. Morbi eu placerat orci. Nam nec rutrum est. Aenean tempor sapien posuere lectus consectetur, sed imperdiet elit finibus. Maecenas condimentum congue mi a mattis. Sed commodo porta leo vitae vulputate. 
+				.cell.line8.col-xs-12				
+					img(src="images/photos/ver2-restaurant13.jpg" alt="restaurant")
+				.clearfix
+			.cell.full-height.col-sm-3
+				img(src="images/photos/ver2-restaurant14.jpg" alt="restaurant" style="float:right;width: auto;height:auto")
+			.clearfix
+		.clearfix
+		.set-title.col-xs-12
+			.discover 
+				img(src="images/texture/discovery.png" alt="restaurant")
+			.text MENU
+		.clearfix
+		.row.img-set.set2.set2-3
+			.cell.col-sm-4(style="padding-right: 20px")
+				.cell.line9.col-xs-12
+					.cell.col-xs-12
+						p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vitae aliquet leo. Aenean dapibus sem vel porttitor maximus. Proin imperdiet, erat sed dictum rhoncus, sem sem ultrices quam, sed auctor tortor ante sed turpis. Phasellus eu elit et eros efficitur viverra. Morbi eu placerat orci. Nam nec rutrum est. Aenean tempor sapien posuere lectus consectetur, sed imperdiet elit finibus. Maecenas condimentum congue mi a mattis. Sed commodo porta leo vitae vulputate. 
+				.cell.line10.col-xs-12(style="background-image: url(images/photos/ver2-restaurant15.jpg);background-position:center;background-size:contain;background-repeat: no-repeat;width: 130%;margin-left: -30%;margin-top: -40px")			
+			.cell.full-height.col-sm-4(style="padding-right: 20px")
+				.cell.line9.col-xs-12
+					img(src="images/photos/ver2-restaurant16.jpg" alt="restaurant")			
+				.cell.line10.col-xs-12
+					img(src="images/photos/ver2-restaurant17.jpg" alt="restaurant")			
+				.clearfix
+			.cell.full-height.col-sm-4(style="padding-right: 20px")
+				.cell.line9.col-xs-12
+					img(src="images/photos/ver2-restaurant18.jpg" alt="restaurant")		
+				.cell.line10.col-xs-12
+					img(src="images/photos/ver2-restaurant19.jpg" alt="restaurant")
+				.clearfix
+			.clearfix
+		.clearfix

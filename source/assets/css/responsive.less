@@ -1,0 +1,54 @@
+// Responsive
+// Resolutions variables
+@screen-desktop: 1200px;
+@screen-landTab: 1024px;
+@screen-portTab: 900px;
+@screen-ipad: 768px;
+@screen-smartphone: 720px;
+@screen-firstgen: 480px;
+@screen-lowers: 320px;
+
+@custom-tab: 960px;
+@custom-tab2: 640px;
+@custom-mobile: 480px;
+@custom-mobile1: 600px;
+
+@custom-tab-height: 600px;
+
+
+@media screen and (max-width: @screen-ipad) {
+	#main-container {
+		padding: 0 22px;
+		.img-set {
+			height: auto !important;
+			.cell {
+				height: auto !important;
+				margin-bottom: 12px;
+				padding-left: 0px !important;
+				padding-right: 0px !important;
+				p {
+					font-size: 1rem;
+					line-height: 1.2rem;
+					padding: 12px 8px !important;
+				}
+			}
+			.til {
+				margin-top: 0px !important;
+				img {
+					max-width: 280px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: @custom-tab) {
+	#header {
+		.mobile-nav {
+			display: block;
+		}
+		.nav-wrap {
+			display: none;
+		}
+	}
+}

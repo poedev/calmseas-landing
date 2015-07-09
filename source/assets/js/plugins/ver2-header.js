@@ -30,9 +30,14 @@
         leftStrian = banner.find('.left-strian'),
         rightStrian = banner.find('.right-strian'),
         lPercent = 18,
-        lWidth = lPercent * winW / 100,
+        lWidth = 0,
         striangleH = 100;
 
+    if (winW < 768) {
+      lPercent = 38;
+    }
+
+    lWidth = lPercent * winW / 100;
 
     leftStrian
       .css({
