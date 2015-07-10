@@ -7,10 +7,10 @@ block vars
 
 block container
 	.main-banner(style="background-image: url(images/photos/ver2-restaurant1.jpg);background-size: cover")
-		.left-strian
-		.right-strian
+		.left-strian.hide
+		.right-strian.hide
 	#main-container
-		h1.main-title 
+		h1.main-title(style="margin-top:25px")
 			span Calm Seas 
 			br
 			span Comfort & Luxury
@@ -29,19 +29,25 @@ block container
 			.text BUFFET
 		.clearfix
 		.row.img-set.set2
-			.cell.full-height.col-sm-5(style="padding-right: 30px")
+			.cell.line2.col-xs-12.max-full.visible-xs
+				img(src="images/photos/ver2-restaurant7.jpg" alt="calmseas restaurant")
+			.cell.full-height.col-sm-5.hidden-xs(style="padding-right: 30px")
 				img(src="images/photos/ver2-restaurant5.jpg" alt="restaurant")
 			.cell.col-sm-7
 				.cell.line1.col-xs-12
-					.cell.col-sm-6
+					.cell.col-sm-6.hidden-xs
 						img(src="images/photos/ver2-restaurant6.jpg" alt="calmseas restaurant")
 					.cell.col-sm-6
 						.til
 							img(src="images/texture/fresh.png" alt="restaurant")
 						p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vitae aliquet leo. Aenean dapibus sem vel porttitor maximus. Proin imperdiet, erat sed dictum rhoncus, sem sem ultrices quam, sed auctor tortor ante sed turpis. Phasellus eu elit et eros efficitur viverra. Morbi eu placerat orci. Nam nec rutrum est. Aenean tempor sapien posuere lectus consectetur, sed imperdiet elit finibus. Maecenas condimentum congue mi a mattis. Sed commodo porta leo vitae vulputate. 
+					.cell.col-sm-6.visible-xs
+						img(src="images/photos/ver2-restaurant6.jpg" alt="calmseas restaurant")
 					.clearfix
-				.cell.line2.col-xs-12.max-full
+				.cell.line2.col-xs-12.max-full.hidden-xs
 					img(src="images/photos/ver2-restaurant7.jpg" alt="calmseas restaurant")
+			.cell.full-height.col-sm-5(style="padding-right: 30px").visible-xs
+				img(src="images/photos/ver2-restaurant5.jpg" alt="restaurant")
 				.clearfix
 			.clearfix
 		.set-title.col-xs-12
@@ -73,7 +79,9 @@ block container
 			.text LUNCH
 		.clearfix
 		.row.img-set.set2.set2-2
-			.cell.full-height.col-sm-4(style="padding-right: 20px")
+			.cell.full-height.col-sm-3.visible-xs
+				img(src="images/photos/ver2-restaurant14.jpg" alt="restaurant" style="float:right;width: auto;height:auto")
+			.cell.full-height.col-sm-4.hidden-xs(style="padding-right: 20px")
 				img(src="images/photos/ver2-restaurant12.jpg" alt="restaurant")
 			.cell.col-sm-5(style="padding-right: 20px")
 				.cell.line7.col-xs-12
@@ -84,7 +92,9 @@ block container
 				.cell.line8.col-xs-12				
 					img(src="images/photos/ver2-restaurant13.jpg" alt="restaurant")
 				.clearfix
-			.cell.full-height.col-sm-3
+			.cell.full-height.col-sm-4.visible-xs(style="padding-right: 20px")
+				img(src="images/photos/ver2-restaurant12.jpg" alt="restaurant")
+			.cell.full-height.col-sm-3.hidden-xs
 				img(src="images/photos/ver2-restaurant14.jpg" alt="restaurant" style="float:right;width: auto;height:auto")
 			.clearfix
 		.clearfix
