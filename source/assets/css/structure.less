@@ -6,10 +6,43 @@
 .left-strian, .right-strian {
     z-index: 8;
 }
+a, a:visited {
+  color: #0f56cc;
+}
+
+.mobile-nav-wrap {
+  height: 100%;
+  right: -180px;
+  position: fixed;
+  background-color: #ffffff;
+  z-index: 3;
+  top: 0px;
+  width: 180px;
+  padding-top: 94px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  &.active {
+    right: 0px;
+  }
+  li {
+    height: 40px;
+    line-height: 30px;
+    border-bottom: 1px solid #eeeeee;
+    text-align: right;
+    padding: 6px;
+    a {
+      color: #484848;
+    }
+  }
+}
+
 #header {
   width: 100%;
   height: 50px;
   position: relative;
+  z-index: 11;
 
   .center-container {
     max-width: 1200px;
@@ -28,10 +61,16 @@
 
   }
   .mobile-nav {
-    font-size: 1.9rem;
-    line-height: 60px;
-    display: none;
+    .switch-btn {
+      font-size: 1.9rem;
+      line-height: 60px;
+      position: absolute;
+      right: 50px;
+      z-index: 21;
+    }
+    display: none;    
   }
+
   .nav-wrap {
     .nav {
       li {
@@ -101,6 +140,10 @@
     border-style: solid;
     border-color: transparent #ffffff;
   }
+
+  &.about {
+    height: 450px;  
+  }
 }
 
 #main-container {
@@ -109,12 +152,12 @@
     padding-bottom: 150px;
     h1 {
       &.main-title {
-        max-width: 300px;
+        max-width: 700px;
         margin: auto;
         text-align: center;
         color: #040400;
-        font-size: 2.1rem;
-        line-height: 2.5rem;
+        font-size: 1.8rem;
+        line-height: 2.3rem;
       }
     }
     .main-desc {
@@ -166,6 +209,15 @@
         .cell {
           height: 285px;
           padding-bottom: 3px;
+        }
+      }
+
+      .til {
+        img {
+          width: auto;
+          height: auto;
+          display: block;
+          margin: auto;
         }
       }
 
@@ -247,13 +299,12 @@
         }
 
         .line9 {
-          height: 250px;
+          height: auto;
           p {
             padding: 20px 10px;
           }
         }
         .line10 {
-          margin-top: 20px;
           height: 250px;
         }
       }
@@ -265,4 +316,509 @@
         padding: 0 50px;
       }
     }
+}
+
+.full-height {
+  height: 100%;
+}
+
+#grid-style1 {
+  * {
+    font-family: 'centur';
+  }
+  .brief-text-block {
+    text-transform: upper;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    text-align: center;
+    p {
+      margin: auto;
+      max-width: 785px;
+      font-size: 16px;
+      color: #484848;
+      line-height: 23px;
+    }
+    h1 {
+      padding: 25px 0;
+      color: #7b6c63;
+    }
+  }
+
+  .brief-pic-block {
+    position: relative;
+    &.brief-block1 {
+      height: 448px;
+    }
+    &.brief-block2 {
+      height: 450px;  
+    }
+    &.brief-block3 {
+      height: 460px;
+    }
+    &.brief-block4 {
+      height: 540px;
+    }
+
+    // accom
+    &.brief-block5 {
+      height: 400px;
+    }
+    &.brief-block6 {
+      height: 400px;
+    }
+    &.brief-block7 {
+      height: 400px;
+    }
+
+    .pic {
+      height: 100%;
+      background-position: center center;
+      &.pic2 {
+        background-image:url(../images/photos/ver2-about2.jpg);
+        background-size: cover;
+        height: 448px;
+      }
+      &.pic3 {
+        background-image:url(../images/photos/ver2-about3.jpg);
+        background-size: cover;
+        height: 215px;
+        position: absolute;
+        bottom: 0px;
+      }
+      &.pic4 {
+        background-image:url(../images/photos/ver2-about4.jpg);
+        background-size: cover;
+        height: 230px;
+        position: absolute;
+        bottom: 0px;
+      }
+      &.pic5 {
+        background-image:url(../images/photos/ver2-about5.jpg);
+        background-size: cover;
+        height: 450px;
+      }
+      &.pic6 {
+        background-image:url(../images/photos/ver2-about6.jpg);
+        background-size: cover;
+        height: 460px;
+      }
+      &.pic7 {
+        background-image:url(../images/photos/ver2-about7.jpg);
+        background-size: cover;
+        height: 160px;
+        position: absolute;
+        bottom: 0px;
+        background-position: left top;
+      }
+      &.pic8 {
+        background-image:url(../images/photos/ver2-about8.jpg);
+        background-size: cover;
+        height: 460px;
+      }
+      &.pic9 {
+        background-image:url(../images/photos/ver2-about9.jpg);
+        background-size: cover;
+        height: 270px;
+        border-right: 4px solid #ffffff;
+        border-bottom: 2px solid #ffffff;
+      }
+      &.pic10 {
+        background-image:url(../images/photos/ver2-about10.jpg);
+        background-size: cover;
+        height: 270px;
+        border-right: 4px solid #ffffff;
+        border-top: 2px solid #ffffff;
+      }
+      &.pic11 {
+        background-image:url(../images/photos/ver2-about11.jpg);
+        background-size: cover;
+        height: 540px;
+      }
+      &.pic12 {
+        background-image:url(../images/photos/ver2-about12.jpg);
+        background-size: cover;
+        height: 270px;
+        border-left: 4px solid #ffffff;
+        border-bottom: 2px solid #ffffff;
+      }
+      &.pic13 {
+        background-image:url(../images/photos/ver2-about13.jpg);
+        background-size: cover;
+        height: 270px;
+        border-left: 4px solid #ffffff;
+        border-top: 2px solid #ffffff;
+      }
+
+      &.pic-accom-1 {
+        background-image:url(../images/photos/ver2-accom2.jpg);
+        background-size: cover;        
+        height: 400px;
+      }
+      &.pic-accom-2 {
+        background-image:url(../images/photos/ver2-accom3.jpg);
+        background-size: cover;        
+        height: 400px;
+      }
+      &.pic-accom-3 {
+        background-image:url(../images/photos/ver2-accom4.jpg);
+        background-size: cover;        
+        height: 400px;
+      }
+      &.pic-accom-4 {
+        background-image:url(../images/photos/ver2-accom5.jpg);
+        background-size: cover;        
+        height: 400px;
+      }
+      &.pic-accom-5 {
+        background-image:url(../images/photos/ver2-accom7.jpg);
+        background-size: cover;        
+        height: 400px;
+      }
+    }
+
+    .block {
+      .text-block {
+        h2 {
+          text-align: center;
+          color: #7b6c63;
+          padding: 10px;
+          font-size: 1rem;
+          line-height: 1.2rem;
+        }
+        p {
+          color: #484848;
+          padding: 0 10px;
+        }
+        &.text-block1 {
+
+        }
+        
+        &.text-block-accom-1 {
+          padding: 60px 50px;
+          font-size: 0.9rem;
+          line-height: 1.4rem;
+        }
+        &.text-block-accom-2 {
+
+          padding: 50px 30px;
+          h2 {
+            font-size: 0.9rem;
+          }
+          p {
+            font-size: 0.9rem;
+            line-height: 1.2rem;          
+          }
+        }
+        &.text-block-accom-3 {
+
+          padding: 50px 30px;
+          h2 {
+            font-size: 0.9rem;
+          }
+          p {
+            font-size: 0.9rem;
+            line-height: 1.2rem;          
+          }
+        }
+      }
+
+      &.block2 {
+        padding-bottom: 215px;
+      }
+
+      &.block3 {
+        padding-bottom: 300px;
+        h2 {
+          padding-top: 30px;
+        }
+      }
+      &.block6 {
+        h2 {
+          padding-top: 30px;
+        }
+      }
+
+
+    }
+  }
+}
+
+.accom-table-container {
+    margin-top: 50px;
+    .table-wrap {
+      position: relative;
+      width: 100%;
+      table {
+        width: 100%;
+
+        th {
+          border-bottom: 1px solid #dcdcdc;
+          border-right: 1px solid #dcdcdc;
+          border-top: 1px solid #dcdcdc;
+          padding: 20px;
+          color: #616161;
+          text-align: center;
+          h2 {
+            padding-bottom: 8px;
+            line-height: 1.5rem;
+          }
+          &.start {
+            border-top: 0px;
+            border-bottom: 0px;
+            .hidden-xs;
+          }
+          &.prop {
+            .hidden-xs;
+          }
+        }
+
+        tr {
+          &.prop-name-mobile {
+            display: none;
+            td {
+              background-color: #f8f8f8;
+              line-height: 24px;
+              font-size: 1rem;
+              .icon {
+              }
+            }
+
+            .icon-wrap {
+              display: inline-block;
+              position: absolute;
+              right: 0px;
+              width: 70px;
+            }
+            .icon {
+              display: inline-block;
+              width: 24px;
+              height: 24px;
+              float: right;
+              margin-left: 4px;
+              
+            }
+            .prop {
+              text-align: left;
+              padding-left: 10px;
+            }
+          }
+        }
+
+        .icon-wrap {
+          .view {
+            background-image: url(../images/icons/accom/01-view.jpg);              
+          }
+          .square {
+            background-image: url(../images/icons/accom/02-square.jpg);              
+          }
+          .bed-type {
+            background-image: url(../images/icons/accom/03-bed-type.jpg);              
+          }
+          .bed-ex {
+            background-image: url(../images/icons/accom/04-bed-ex.jpg);              
+          }
+          .fire {
+            background-image: url(../images/icons/accom/05-fire.jpg);              
+          }
+          .room-card {
+            background-image: url(../images/icons/accom/06-room-card.jpg);              
+          }
+          .safe {
+            background-image: url(../images/icons/accom/07-safe.jpg);              
+          }
+          .wifi {
+            background-image: url(../images/icons/accom/08-wifi.jpg);              
+          }
+          .lcd {
+            background-image: url(../images/icons/accom/09-lcd.jpg);              
+          }
+          .air-con {
+            background-image: url(../images/icons/accom/10-air-con.jpg);              
+          }
+          .mini-bar {
+            background-image: url(../images/icons/accom/11-mini-bar.jpg);              
+          }
+          .telephone {
+            background-image: url(../images/icons/accom/12-telephone.jpg);              
+          }
+          .lamp {
+            background-image: url(../images/icons/accom/13-lamp.jpg);              
+          }
+          .cusion {
+            background-image: url(../images/icons/accom/14-cusion.jpg);              
+          }
+          .cupboard {
+            background-image: url(../images/icons/accom/15-cupboard.jpg);
+          }
+          .hanger {
+            background-image: url(../images/icons/accom/16-hanger.jpg);
+          }
+          .kettle {
+            background-image: url(../images/icons/accom/17-kettle.jpg);
+          }
+          .sofa {
+            background-image: url(../images/icons/accom/18-sofa.jpg);
+          }
+          .sofa-a {
+            background-image: url(../images/icons/accom/18-sofa-a.jpg);
+          }
+          .hair-dryer {
+            background-image: url(../images/icons/accom/19-hair-dryer.jpg);
+          }
+          .shower {
+            background-image: url(../images/icons/accom/20-shower.jpg);
+          }
+          .bath {
+            background-image: url(../images/icons/accom/21-bath.jpg);
+          }
+          .brush {
+            background-image: url(../images/icons/accom/22-brush.jpg);
+          }
+          .sampoo {
+            background-image: url(../images/icons/accom/23-sampoo.jpg);
+          }
+          .swab {
+            background-image: url(../images/icons/accom/24-swab.jpg);
+          }
+          .shave {
+            background-image: url(../images/icons/accom/25-shave.jpg);
+          }
+          .bathrobe {
+            background-image: url(../images/icons/accom/26-bathrobe.jpg);
+          }
+          .hair-brush {
+            background-image: url(../images/icons/accom/27-hair-brush.jpg);
+          }
+          .drinks {
+            background-image: url(../images/icons/accom/28-drinks.jpg);
+          }
+          .fruit {
+            background-image: url(../images/icons/accom/29-fruit.jpg);
+          }
+          .hotel-service {
+            background-image: url(../images/icons/accom/30-hotel-service.jpg);
+          }
+        }
+
+        td {
+          text-align: center;
+          padding: 15px;
+          border-bottom: 1px solid #dcdcdc;
+          border-right: 1px solid #dcdcdc;
+          border-top: 1px solid #dcdcdc;
+          position: relative;
+
+          &.prop-name {
+            line-height: 24px;
+            .icon-wrap {
+              display: inline-block;
+              position: absolute;
+              left: 0px;
+              width: 80px;
+            }
+            .icon {
+              display: inline-block;
+              width: 24px;
+              height: 24px;
+              float: right;
+              margin-left: 4px;             
+                                
+            }
+            .prop {
+              text-align: left;
+              padding-left: 70px;
+              display: block;
+            }
+
+          }
+
+          .icon {
+              display: inline-block;
+              width: 24px;
+              height: 24px;
+            }
+
+
+          &.none {
+            background-color: #f6f6f6;
+          }
+          &.group-name {
+            color: #464646;
+            line-height: 1.3rem;
+            .hidden-xs;
+            border-left: 1px solid #dcdcdc;
+          }
+          &.prop-name {
+            .hidden-xs;
+          }
+        }
+      }
+    }
+}
+
+#footer {
+  background-color: #555555;
+  position: relative;
+  padding: 10px;
+  padding-bottom: 25px;
+  margin-top: 20px;
+
+  * {
+    font-family: 'centur'
+  }
+  .center-container {
+    max-width: 1200px;
+    margin: auto;
+  }
+  .map {
+    height: 250px;
+    iframe {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .nav {
+    width: 100%;
+    height: 70px;
+    line-height: 54px;
+    li {
+      float: left;
+      padding: 8px 0;
+      padding-right: 15px;
+      margin-right: 8px;
+      position: relative;
+      a  {
+        color: #fefefe;
+      }
+    }
+  }
+  .info {
+    margin-bottom: 12px;
+    li {
+      line-height: 1.5rem;
+      font-size: 0.9rem;
+      color: #ffffff;
+    }
+    .icon {
+      width: 32px;
+      height: 32px;
+      background-size: cover;
+      float: left;
+      &.fb {
+        background-image: url(../images/icons/fb-48.png);
+      }
+      &.pin {
+        background-image: url(../images/icons/pin-48.png);
+      }
+    }
+  }
+}
+
+.icon {
+  width: 48px;
+  height: 48px;
+  background-size: cover;
+  &.check {
+    background-image: url(../images/icons/i-check-48.png);    
+  }
 }

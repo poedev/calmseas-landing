@@ -52,3 +52,97 @@
 		}
 	}
 }
+
+@media screen and (max-width: @screen-landTab) {
+	#grid-style1 {
+		.brief-pic-block {
+			&.brief-block1 {
+		      height: 523px;
+		    }
+		    &.brief-block2 {
+		      height: 518px;  
+		    }
+		    &.brief-block3 {
+		      height: 520px;
+		    }
+		    &.brief-block4 {
+		      height: 540px;
+		    }
+
+		    // accommodation styles
+		    &.brief-block5 {
+		      height: 400px;  
+		    }
+		    &.brief-block6 {
+		      height: 430px;
+		    }
+		    &.brief-block7 {
+		      height: 470px;
+		    }
+
+		    .block {
+		    	.text-block {
+		    		&.text-block-accom-1 {
+			          padding: 30px;
+			        }
+			        &.text-block-accom-2 {
+			          padding: 25px 15px;
+			        }
+			        &.text-block-accom-3 {
+			          padding: 25px 15px;
+			        }
+		    	}
+		    }
+		    .pic {
+		    	&.pic-accom-2 {
+			    	height: 430px;
+			    }
+		        &.pic-accom-3 {
+		        	height: 430px;
+		        }
+		    	&.pic-accom-4 {
+		    		height: 470px;
+				}
+		      	&.pic-accom-5 {
+			        height: 470px;
+			      }
+		    }
+
+		}
+	}
+}
+@media screen and (max-width: @screen-ipad) { 
+	tr {
+		&.prop-name-mobile {
+			display: table-row !important;
+		}
+	}
+	#grid-style1 {
+		#main-container {
+			padding: 0px;
+		}
+		.brief-pic-block {
+			height: auto !important; 
+			.pic {
+				position: relative !important;
+				margin-bottom: 5px;
+			}
+			.block {
+				.text-block {
+					height: auto !important;
+					padding: 40px 18px;
+					p {
+						font-size: 1.2rem;
+						line-height: 1.4rem;			
+					}
+					h2 {
+						font-size: 1.3rem;
+						line-height: 1.6rem;
+						padding: 0 0 20px 0 !important;
+					}
+				}		
+			}
+		}
+		
+	}
+}

@@ -51,9 +51,16 @@
       });
   };
 
+  var mobileNavHandle = function(){
+    $('.mobile-nav .switch-btn').on('click', function(){
+      $('.mobile-nav-wrap').toggleClass('active');
+    })
+  };
+
   var initHeader = function(){
     setHeaderTopTriangle();
     setMainbannerStrian();
+    mobileNavHandle();
 
     win.on('resize.header', function(){
       setHeaderTopTriangle();
