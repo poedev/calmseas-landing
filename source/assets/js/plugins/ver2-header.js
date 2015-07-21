@@ -54,7 +54,10 @@
   var mobileNavHandle = function(){
     $('.mobile-nav .switch-btn').on('click', function(){
       $('.mobile-nav-wrap').toggleClass('active');
-    })
+    });
+    $('.body-container, footer').on('click', function(){
+      $('.mobile-nav-wrap').removeClass('active');
+    });
   };
 
   var initHeader = function(){
@@ -67,6 +70,11 @@
       setMainbannerStrian();
     });
   };
+
+  // init css
+  $('.nav-wrap .nav li').css({'padding-left': '1px'});
+  $('.nav-wrap .nav li').animate({'padding-right': '20px'}, 700);
+
 
   initHeader();
 }(jQuery, window));

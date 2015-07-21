@@ -7,12 +7,15 @@ header#header
     .nav-wrap
       .nav
         +nav([
-          {href: "vi/gioithieu.html", id:"home", title: "GIỚI THIỆU"},
-          {href: "vi/tienich.html", id:"fac", title: "TIỆN ÍCH"},
-          {href: "vi/hangphong.html", id:"accom", title: "HẠNG PHÒNG"},
+          {href: "vi/index.html", id:"home", title: "GIỚI THIỆU", class: "active"},
+          {href: "vi/hang-phong.html", id:"accom", title: "HẠNG PHÒNG"},
           {href: "vi/nha-hang.html", id:"res", title: "NHÀ HÀNG"},
-          {href: "vi/uu-dai.html", id:"offer", title: "ƯU ĐÃI"}
+          {href: "vi/tien-ich.html", id:"fac", title: "TIỆN ÍCH"}
         ])
+    .booking-phone
+      i.fa.fa-phone
+      span.hidden-xs Đặt phòng
+      span.num (+84) (058) 354 2777
     .sub-nav.accom
       +nav([
         {href: "accommodation-standard-single-city-view.html", title: "STANDARD"},
@@ -32,9 +35,8 @@ header#header
   .mobile-nav-wrap
     .nav
       +nav([
-        {href: "vi/gioithieu.html", id:"home", title: "GIỚI THIỆU"},
-        {href: "vi/tienich.html", id:"fac", title: "TIỆN ÍCH"},
-        {href: "vi/hangphong.html", id:"accom", title: "HẠNG PHÒNG"},
+        {href: "vi/index.html", id:"home", title: "GIỚI THIỆU"},
+        {href: "vi/hang-phong.html", id:"accom", title: "HẠNG PHÒNG"},
         {href: "vi/nha-hang.html", id:"res", title: "NHÀ HÀNG"},
-        {href: "vi/uu-dai.html", id:"offer", title: "ƯU ĐÃI"}
+        {href: "vi/tien-ich.html", id:"fac", title: "TIỆN ÍCH"}
       ])

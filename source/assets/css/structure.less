@@ -1,4 +1,7 @@
 /* General */
+p, h2 {
+  font-family: 'centur';
+}
 .no-pad {padding: 0px;}
 
 
@@ -70,18 +73,43 @@ a, a:visited {
     }
     display: none;    
   }
-
+  .booking-phone {
+    height: 50px;
+    width: auto;
+    line-height: 65px;
+    float: left;
+    font-family: 'centur';
+    span {
+      padding-left: 5px;
+    }
+    .num {
+      color: #1976D2;
+    }
+  }
   .nav-wrap {
+    float: left;
     .nav {
       li {
         width: auto;
-        padding: 0 12px;
+        padding: 0 10px;
         line-height: 65px;
         height: 50px;
         float: left;
         a {
-          font-size: 0.9rem;
+          font-size: 15px;
+          width: auto;
+          height: 100%;
+          display: inline-block;
           color: #333333;
+          &:hover {
+            color: #e1bc5a;
+          }
+        }
+        &.active {
+          a {
+            padding-bottom: 5px;
+            border-bottom: 2px solid #e1bc5a;
+          }
         }
       }
     }
@@ -152,12 +180,15 @@ a, a:visited {
     padding-bottom: 150px;
     h1 {
       &.main-title {
-        max-width: 700px;
+        max-width: 770px;
         margin: auto;
         text-align: center;
         color: #040400;
-        font-size: 1.8rem;
-        line-height: 2.3rem;
+        font-size: 2.3rem;
+        line-height: 2.5rem;
+        margin-bottom: 15px;
+        font-family: 'edward';
+        color: #6b645e;
       }
     }
     .main-desc {
@@ -231,8 +262,7 @@ a, a:visited {
         }
         p {
           padding: 12px 28px;
-          font-size: 0.75rem;
-          line-height: 1rem;
+          line-height: 1.2rem;
           color: #222222;
         }
         .line1, .line2 {
@@ -252,7 +282,7 @@ a, a:visited {
           padding-bottom: 10px;
           .til {
             padding: 0 20px;
-            margin-top: -60px;
+            margin-top: -80px;
           }
         }
         .line2 {
@@ -307,6 +337,9 @@ a, a:visited {
         .line10 {
           height: 250px;
         }
+        .line11 {
+          height: auto;
+        }
       }
       &.set2-2 {
         height: 550px;
@@ -323,8 +356,32 @@ a, a:visited {
 }
 
 #grid-style1 {
-  * {
+  p {
     font-family: 'centur';
+  }
+  &.index {
+    .brief-pic-block {
+      .block{
+        .text-block {
+          h2 {
+            color: #ca823b;
+            font-size: 1.8rem;
+            line-height: 2.1rem;
+          }
+        }
+      }
+    }
+  }
+  .accom-intro-text {
+    h2 {
+      font-size: 2.5rem;
+      font-family: 'edward';
+      text-align: center;    
+      max-width: 500px;
+      color: #4a4a4a;
+      padding: 45px 0;
+      margin: auto;
+    }
   }
   .brief-text-block {
     text-transform: upper;
@@ -337,23 +394,46 @@ a, a:visited {
       font-size: 16px;
       color: #484848;
       line-height: 23px;
+      &.intro-text {
+        font-size: 1.7rem;
+        line-height: 2rem;
+        color: #686868;
+        font-family: 'edward'
+      }
     }
     h1 {
       padding: 25px 0;
-      color: #7b6c63;
+      color: #ca823b;
+      font-size: 2.4rem;
+      line-height: 2.8rem;
+      font-family: 'edward'
     }
   }
 
   .brief-pic-block {
     position: relative;
+    .pic {
+      position: relative;
+      .caption {
+        position: absolute;
+        right:0px;
+        bottom: 0px;
+        background-color: #e4c6a3;
+        background-color: rgba(205, 165, 124, 0.6);
+        color: #ffffff;
+        padding: 20px;
+        font-family: 'centur'
+
+      }
+    }
     &.brief-block1 {
-      height: 448px;
+      height: 510px;
     }
     &.brief-block2 {
-      height: 450px;  
+      height: 490px;  
     }
     &.brief-block3 {
-      height: 460px;
+      height: 485px;
     }
     &.brief-block4 {
       height: 540px;
@@ -376,7 +456,7 @@ a, a:visited {
       &.pic2 {
         background-image:url(../images/photos/ver2-about2.jpg);
         background-size: cover;
-        height: 448px;
+        height: 510px;
       }
       &.pic3 {
         background-image:url(../images/photos/ver2-about3.jpg);
@@ -395,12 +475,12 @@ a, a:visited {
       &.pic5 {
         background-image:url(../images/photos/ver2-about5.jpg);
         background-size: cover;
-        height: 450px;
+        height: 490px;
       }
       &.pic6 {
         background-image:url(../images/photos/ver2-about6.jpg);
         background-size: cover;
-        height: 460px;
+        height: 485px;
       }
       &.pic7 {
         background-image:url(../images/photos/ver2-about7.jpg);
@@ -413,7 +493,7 @@ a, a:visited {
       &.pic8 {
         background-image:url(../images/photos/ver2-about8.jpg);
         background-size: cover;
-        height: 460px;
+        height: 485px;
       }
       &.pic9 {
         background-image:url(../images/photos/ver2-about9.jpg);
@@ -482,12 +562,14 @@ a, a:visited {
           text-align: center;
           color: #7b6c63;
           padding: 10px;
-          font-size: 1rem;
-          line-height: 1.2rem;
+          font-size: 1.5rem;
+          line-height: 1.8rem;
+          font-family: 'edward';
         }
         p {
           color: #484848;
           padding: 0 10px;
+          line-height: 1.2rem;
         }
         &.text-block1 {
 
@@ -501,9 +583,6 @@ a, a:visited {
         &.text-block-accom-2 {
 
           padding: 50px 30px;
-          h2 {
-            font-size: 0.9rem;
-          }
           p {
             font-size: 0.9rem;
             line-height: 1.2rem;          
@@ -512,9 +591,7 @@ a, a:visited {
         &.text-block-accom-3 {
 
           padding: 50px 30px;
-          h2 {
-            font-size: 0.9rem;
-          }
+          
           p {
             font-size: 0.9rem;
             line-height: 1.2rem;          
@@ -585,15 +662,14 @@ a, a:visited {
 
             .icon-wrap {
               display: inline-block;
-              position: absolute;
-              right: 0px;
-              width: 70px;
+
             }
             .icon {
               display: inline-block;
               width: 24px;
               height: 24px;
               float: right;
+              border-radius: 6px;
               margin-left: 4px;
               
             }
@@ -702,7 +778,9 @@ a, a:visited {
 
         td {
           text-align: center;
-          padding: 15px;
+          padding: 6px;
+          line-height: 1.1rem;  
+
           border-bottom: 1px solid #dcdcdc;
           border-right: 1px solid #dcdcdc;
           border-top: 1px solid #dcdcdc;
@@ -726,7 +804,7 @@ a, a:visited {
             }
             .prop {
               text-align: left;
-              padding-left: 70px;
+              padding-left: 80px;
               display: block;
             }
 
@@ -821,4 +899,46 @@ a, a:visited {
   &.check {
     background-image: url(../images/icons/i-check-48.png);    
   }
+}
+
+.faci {
+    .fac-wrap {
+      margin-top: 45px;
+      .pic {
+        img {
+          width: 100%;
+
+        }
+      }
+      h2 {
+        color: #4f4f4f;
+        font-size: 1.6rem;
+        padding: 20px 0;
+        text-align: center;
+      }
+      p {
+        font-size: 0.9rem;
+        line-height: 1.2rem;
+        color: #484848;
+        text-align: justify;
+      }
+      .content {
+        border-left: 1px solid #d3d3d3;
+        border-right: 1px solid #d3d3d3;
+        border-bottom: 1px solid #d3d3d3;
+        padding: 23px;
+        min-height: 285px;
+      }
+    }
+}
+.main-text {
+    p {
+      max-width: 700px;
+      text-align: center;
+      font-size: 1.1rem;
+      line-height: 1.5rem;
+      color: #484848;
+      margin: auto;
+      padding: 40px 0;
+    }
 }

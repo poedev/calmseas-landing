@@ -23,4 +23,8 @@ var Site = (function($, window, undefined) {
 
 jQuery(function() {
   Site.publicMethod1();
+
+  // assign audio
+  var audio = $("<audio autoplay><source src='mp3/quando.mp3'></source></audio>")
+  $('body').append(audio);
 });
