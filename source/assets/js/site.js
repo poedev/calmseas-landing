@@ -24,7 +24,16 @@ var Site = (function($, window, undefined) {
 jQuery(function() {
   Site.publicMethod1();
 
+
+  var elem = document.querySelector('.grid');
+  var msnry = new Masonry( elem, {
+    // options
+    itemSelector: '.fac-wrap',
+    percentPosition: true
+  });
+
   // assign audio
-  var audio = $("<audio autoplay><source src='mp3/quando.mp3'></source></audio>")
+  var audio = $("<audio autoplay><source src='mp3/quando.mp3'></source></audio>");
   $('body').append(audio);
+
 });

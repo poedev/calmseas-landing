@@ -1,0 +1,39 @@
+extends ../layouts/vi-layout-ver2
+
+block vars
+	-title = 'Khuyến mãi - Calmseas Hotel'
+	-bodyClass = 'home'
+	-menuIndex = 0
+
+block container
+	.body-container
+		.main-banner(style="background-image: url(images/photos/ver2-faci1.jpg);background-size: cover;background-position: top center")
+			.left-strian.hide
+			.right-strian.hide
+		#main-container.contact
+			h1.title LIÊN HỆ
+			.clearfix
+			.contact-form-container.col-md-6
+				form(action="#" method="post")
+					input.form-control(placeholder="Họ và tên")
+					input.form-control(placeholder="Email")
+					input.form-control(placeholder="Tiêu đề")
+					textarea.form-control(placeholder="Nội dung")
+					
+			.contact-info-container.col-md-6
+				ul.infos
+					li
+						i.fa.fa-map-marker
+						span.text 
+							span Khách sạn Calmseas
+							br
+							span Địa chỉ: 99 Phạm Văn Đồng - Vĩnh Hải - Nha Trang - Khánh Hoà
+					li
+						i.fa.fa-phone
+						span.text 
+							span (+84) (058) 3543 888
+					li
+						i.fa.fa-envelope
+						span.text 
+							span info@calmseashotel.com.vn
+			.clearfix
