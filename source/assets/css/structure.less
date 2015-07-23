@@ -408,6 +408,9 @@ a, a:visited {
       line-height: 2.8rem;
       font-family: 'edward'
     }
+    &.block-grey {
+      background-color: #f7f7f7;
+    }
   }
 
   .brief-pic-block {
@@ -606,12 +609,12 @@ a, a:visited {
       &.block3 {
         padding-bottom: 300px;
         h2 {
-          padding-top: 30px;
+          padding-top: 10px;
         }
       }
       &.block6 {
         h2 {
-          padding-top: 30px;
+          padding-top: 5px;
         }
       }
 
@@ -966,16 +969,20 @@ a, a:visited {
         color: #333333;
         margin-top: 12px;
         border-top: 1px dashed #cecece;
+        .text {
+          padding-left: 12px;
+          color: #565656;
+        }
         .fa {
-          color: #555555;
-          padding-left: 8px;
+          color: #777777;
+          padding-left: 7px;
         }
       }
       margin-top: 45px;
       .pic {
         img {
           width: 100%;
-
+          border-radius: 6px 6px 0 0;
         }
       }
       h2 {
@@ -998,6 +1005,8 @@ a, a:visited {
         padding-bottom: 8px;
         min-height: 285px;
         margin-top: -2px;
+        border-radius: 0 0 6px 6px;
+        box-shadow: 0 1px 2px 0 rgba(0,0,0,0.22);
       }
     }
 }

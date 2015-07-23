@@ -31,6 +31,15 @@ jQuery(function() {
     itemSelector: '.fac-wrap',
     percentPosition: true
   });
+  setTimeout(function(){
+    $(window).trigger('resize');
+  }, 1000);
+  setTimeout(function(){
+    $(window).trigger('resize');
+  }, 1300);
+  setTimeout(function(){
+    $(window).trigger('resize');
+  }, 1500);
 
   // assign audio
   var audio = $("<audio autoplay><source src='mp3/quando.mp3'></source></audio>");
