@@ -26,23 +26,34 @@ jQuery(function() {
 
 
   var elem = document.querySelector('.grid');
-  var msnry = new Masonry( elem, {
-    // options
-    itemSelector: '.fac-wrap',
-    percentPosition: true
-  });
-  setTimeout(function(){
-    $(window).trigger('resize');
-  }, 1000);
-  setTimeout(function(){
-    $(window).trigger('resize');
-  }, 1300);
-  setTimeout(function(){
-    $(window).trigger('resize');
-  }, 1500);
+  if (elem) {
+    var msnry = new Masonry( elem, {
+      // options
+      itemSelector: '.fac-wrap',
+      percentPosition: true
+    });
+  }
 
   // assign audio
-  // var audio = $("<audio autoplay><source src='mp3/quando.mp3'></source></audio>");
-  // $('body').append(audio);
+  var audio = $("<audio autoplay><source src='http://poeboxes.com/demo/calmseas-hotel/mp3/quando.mp3'></source></audio>");
+  $('body').append(audio);
 
+  // ON OFF audio
+  $('.audio-switch').on('click', function(){
+    var audiodom = audio.get(0),
+        self = $(this);
+
+    if (audiodom.paused) {
+      audiodom.play();
+      self.addClass('active');
+    } else {
+      audiodom.pause();
+      self.removeClass('active');
+    }
+  });
+
+  // Back to top button
+  $('.back-to-top').on('click', function(){
+    $('body, html').animate({'scrollTop': '0px'}, 1400);
+  });
 });
