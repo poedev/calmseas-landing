@@ -42,7 +42,7 @@ jQuery(function() {
   }, 1500);
 
   // assign audio
-  var audio = $("<audio autoplay><source src='mp3/quando.mp3'></source></audio>");
-  $('body').append(audio);
+  // var audio = $("<audio autoplay><source src='mp3/quando.mp3'></source></audio>");
+  // $('body').append(audio);
 
 });
