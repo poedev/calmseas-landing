@@ -40,9 +40,10 @@ module.exports = function(grunt) {
       dist: {
         files: [{
           '<%= meta.build %>js/modernizr.js': ['<%= meta.assets %>js/libs/modernizr.2.8.3.js','<%= meta.assets %>js/libs/detectizr.js'],
-          '<%= meta.build %>js/libs.js': ['<%= meta.assets %>js/libs/jquery-1.11.2.js', '<%= meta.assets %>js/libs/plugins/*.js'],
+          '<%= meta.build %>js/libs.js': ['<%= meta.assets %>js/libs/angular.min.js', '<%= meta.assets %>js/libs/jquery-1.11.2.js', '<%= meta.assets %>js/libs/plugins/*.js'],
           '<%= meta.build %>js/l10n.js': '<%= meta.assets %>js/l10n.js',
           '<%= meta.build %>js/script.js': ['<%= meta.assets %>js/site.js', '<%= meta.assets %>js/plugins/*.js'],
+          '<%= meta.build %>js/ng.js': ['<%= meta.assets %>js/ng/app.js', '<%= meta.assets %>js/ng/**/*.js'],
           '<%= meta.build %>js/booking-scripts.js': ['<%= meta.assets %>js/plugins/booking-*.js']
         }]
       }
@@ -137,7 +138,7 @@ module.exports = function(grunt) {
         interrupt: true
       },
       js: {
-        files: ['<%= meta.assets %>js/plugins/*.js', '<%= meta.assets %>js/*.js'],
+        files: ['<%= meta.assets %>js/plugins/*.js', '<%= meta.assets %>js/*.js', '<%= meta.assets %>js/ng/*.js', '<%= meta.assets %>js/ng/**/*.js'],
         tasks: ['jshint', 'concat']
       },
       jade: {
