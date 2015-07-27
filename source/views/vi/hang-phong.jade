@@ -1,0 +1,627 @@
+extends ../layouts/vi-layout-ver2
+
+block vars
+	-title = 'Hạng phòng Calmseas Hotel'
+	-bodyClass = 'home'
+	-menuIndex = 0
+
+block container
+	.body-container(ng-controller="page-content")
+		#grid-style1
+			.main-banner.about(editable-block data-block-id="accom01" data-type="{{pageContent.accom01.type}}" style="background-image: url({{pageContent.accom01.content}});background-size: cover;")
+				.left-strian.hide
+				.right-strian.hide
+			#main-container
+				.accom-intro-text
+					h2(editable-block data-block-id="accom01" data-type="{{pageContent.accom02.type}}") {{pageContent.accom02.content}}
+				.brief-pic-block.brief-block5.no-pad.col-xs-12
+					.block.block11.full-height.no-pad.col-sm-7
+						.pic.no-pad.pic-accom-1.col-xs-12.hidden-xs(editable-block data-block-id="accom03" data-type="{{pageContent.accom03.type}}" style="background-image: url({{pageContent.accom03.content}})")
+							.caption(editable-block data-block-id="accom04" data-type="{{pageContent.accom04.type}}") {{pageContent.accom04.content}}
+						img(src="{{pageContent.accom03.content}}" alt="calmseas hotel").col-xs-12.visible-xs.no-pad
+					.block.block12.full-height.no-pad.col-sm-5
+						.text-block.full-height.text-block-accom-1.col-xs-12
+							h2
+								img(src="{{pageContent.accom05.content}}" editable-block data-block-id="accom05" data-type="{{pageContent.accom05.type}}")
+							p(editable-block data-block-id="accom06" data-type="{{pageContent.accom06.type}}") {{pageContent.accom06.content}}
+							p(editable-block data-block-id="accom07" data-type="{{pageContent.accom07.type}}") {{pageContent.accom07.content}}
+				.block.block11.full-height.no-pad.col-sm-7.visible-xs
+					.pic.no-pad.pic-accom-1.col-xs-12
+				.brief-pic-block.brief-block6.no-pad.col-xs-12
+					.block.block11.full-height.no-pad.col-sm-3
+						.pic.no-pad.pic-accom-2.col-xs-12.hidden-xs(editable-block data-block-id="accom08" data-type="{{pageContent.accom08.type}}" style="background-image: url({{pageContent.accom08.content}})")
+							.caption(editable-block data-block-id="accom09" data-type="{{pageContent.accom09.type}}") {{pageContent.accom09.content}}
+						img(src="{{pageContent.accom08.content}}" alt="calmseas hotel").col-xs-12.visible-xs.no-pad
+					.block.block12.full-height.no-pad.col-sm-4
+						.text-block.full-height.text-block-accom-2.col-xs-12
+							h2(editable-block data-block-id="accom10" data-type="{{pageContent.accom10.type}}")
+								img(src="{{pageContent.accom10.content}}")
+							p(editable-block data-block-id="accom11" data-type="{{pageContent.accom11.type}}") {{pageContent.accom11.content}}
+					.block.block11.full-height.no-pad.col-sm-5
+						.pic.no-pad.pic-accom-3.col-xs-12(editable-block data-block-id="accom12" data-type="{{pageContent.accom12.type}}" style="background-image: url({{pageContent.accom12.content}})")
+							.caption(editable-block data-block-id="accom13" data-type="{{pageContent.accom13.type}}") {{pageContent.accom13.content}}
+						img(src="{{pageContent.accom12.content}}" alt="calmseas hotel").col-xs-12.visible-xs.no-pad
+				.brief-pic-block.brief-block7.no-pad.col-xs-12
+					.block.block13.full-height.no-pad.col-sm-3
+						.text-block.full-height.text-block-accom-3.col-xs-12
+							h2(editable-block data-block-id="accom14" data-type="{{pageContent.accom14.type}}")
+								img(src="{{pageContent.accom14.content}}")
+							p(editable-block data-block-id="accom15" data-type="{{pageContent.accom15.type}}") {{pageContent.accom15.content}}
+					.block.block12.full-height.no-pad.col-sm-6
+						.pic.no-pad.pic-accom-4.col-xs-12(editable-block data-block-id="accom16" data-type="{{pageContent.accom16.type}}" style="background-image: url({{pageContent.accom16.content}})")
+					img(src="{{pageContent.accom16.content}}" alt="calmseas hotel").col-xs-12.visible-xs.no-pad
+					.block.block14.full-height.no-pad.col-sm-3
+						.pic.no-pad.pic-accom-5.col-xs-12((editable-block data-block-id="accom17" data-type="{{pageContent.accom17.type}}" style="background-image: url({{pageContent.accom17.content}})")
+					img(src="{{pageContent.accom17" alt="calmseas hotel").col-xs-12.visible-xs.no-pad
+				.clearfix
+				.accom-table-container.col-xs-12.no-pad
+					.table-wrap
+						table
+							thead
+								th.start
+								th.prop
+									h2 CHI TIẾT
+								th
+									h2 PHÒNG TIÊU CHUẨN
+									h3 STANDARD ROOM
+								th
+									h2 PHÒNG HẠNG SANG
+									h3 DELUXE ROOM
+								th
+									h2 PHÒNG CAO CẤP
+									h3 SUITE ROOM
+							tbody
+								tr.prop-name-mobile
+									td(colspan="3")
+										.icon-wrap
+											.icon.view
+										span.prop Hướng nhìn
+								tr
+									td.group-name(rowspan="5") KHÔNG GIAN
+									td.prop-name
+										.icon-wrap
+											.icon.view
+										span.prop Hướng nhìn
+									td
+										span Hướng thành phố
+									td
+										span Hướng biển
+									td
+										span Hướng biển
+								tr.prop-name-mobile
+									td(colspan="3")
+										.icon-wrap
+											.icon.square
+										span.prop Diện tích
+								tr
+									td.prop-name
+										.icon-wrap
+											.icon.square
+										span.prop Diện tích
+									td
+										span 18 m2
+									td
+										span 25 m2
+									td
+										span 40 m2
+								tr.prop-name-mobile
+									td(colspan="3")
+										.icon-wrap
+											.icon.bed-type
+										span.prop Loại giường
+								tr
+									td.prop-name
+										.icon-wrap
+											.icon.bed-type
+										span.prop Loại giường
+									td
+										span Giường đơn 1.4 x 2 (m)
+									td
+										span 1 giường đơn 1.8 x 2 (m) hoặc
+										br
+										span 2 giường đơn 1 x 2 (m)
+									td
+										span Giường King size 2 x 2 (m)
+										br
+										span và 1 giường 1.4 x 2 (m)
+								tr.prop-name-mobile
+									td(colspan="3")
+										.icon-wrap
+											.icon.bed-ex
+										span.prop Giường phụ
+								tr
+									td.prop-name
+										.icon-wrap
+											.icon.bed-ex
+										span.prop Giường phụ
+									td
+									td
+										.icon.check
+									td
+										.icon.check
+								tr.prop-name-mobile
+									td(colspan="3")
+										.icon-wrap
+											.icon.fa.fa-users
+										span.prop Sức chứa
+								tr
+									td.prop-name
+										.icon-wrap
+											.icon.fa.fa-users
+										span.prop Sức chứa
+									td
+										span 1 người lớn
+										br
+										span 1 trẻ em dưới 5 tuổi
+									td
+										span 3 người lớn
+										br
+										span 2 trẻ em dưới 5 tuổi
+									td
+										span 5 người lớn
+										br
+										span 4 trẻ em dưới 4 tuổi
+								tr
+									td.group-name(rowspan="4") THIẾT BỊ BẢO VỆ
+									td.none.prop-name
+									td.none
+									td.none
+									td.none
+								tr.prop-name-mobile
+									td(colspan="3")
+										.icon-wrap
+											.icon.fire
+										span.prop Hệ thống báo cháy
+								tr
+									td.prop-name
+										.icon-wrap
+											.icon.fire
+										span.prop Hệ thống báo cháy
+									td
+										.icon.check
+									td
+										.icon.check
+									td
+										.icon.check
+								tr.prop-name-mobile
+									td(colspan="3")
+										.icon-wrap
+											.icon.room-card
+										span.prop Thẻ khoá từ
+								tr
+									td.prop-name
+										.icon-wrap
+											.icon.room-card
+										span.prop Thẻ khoá từ
+									td
+										.icon.check
+									td
+										.icon.check
+									td
+										.icon.check
+								tr.prop-name-mobile
+									td(colspan="3")
+										.icon-wrap
+											.icon.safe
+										span.prop Két sắt
+								tr
+									td.prop-name
+										.icon-wrap
+											.icon.safe
+										span.prop Két sắt
+									td
+										.icon.check
+									td
+										.icon.check
+									td
+										.icon.check
+								tr
+									td.group-name(rowspan="12")
+										span VẬT DỤNG
+										br
+										span PHÒNG NGỦ
+									td.none.prop-name
+									td.none
+									td.none
+									td.none
+								tr.prop-name-mobile
+									td(colspan="3")
+										.icon-wrap
+											.icon.wifi
+										span.prop Wifi
+								tr
+									td.prop-name
+										.icon-wrap
+											.icon.wifi
+										span.prop Wifi
+									td
+										.icon.check
+									td
+										.icon.check
+									td
+										.icon.check
+								tr.prop-name-mobile
+									td(colspan="3")
+										.icon-wrap
+											.icon.lcd
+										span.prop TV LCD 42 inch
+								tr
+									td.prop-name
+										.icon-wrap
+											.icon.lcd
+										span.prop TV LCD 42 inch
+									td
+										.icon.check
+									td
+										.icon.check
+									td
+										.icon.check
+								tr.prop-name-mobile
+									td(colspan="3")
+										.icon-wrap
+											.icon.air-con
+										span.prop Máy điều hoà
+								tr
+									td.prop-name
+										.icon-wrap
+											.icon.air-con
+										span.prop Máy điều hoà
+									td
+										.icon.check
+									td
+										.icon.check
+									td
+										.icon.check
+								tr.prop-name-mobile
+									td(colspan="3")
+										.icon-wrap
+											.icon.mini-bar
+										span.prop Mini bar
+								tr
+									td.prop-name
+										.icon-wrap
+											.icon.mini-bar
+										span.prop Mini bar
+									td
+										.icon.check
+									td
+										.icon.check
+									td
+										.icon.check
+								tr.prop-name-mobile
+									td(colspan="3")
+										.icon-wrap
+											.icon.telephone
+										span.prop Điện thoại bàn
+								tr
+									td.prop-name
+										.icon-wrap
+											.icon.telephone
+										span.prop Điện thoại bàn
+									td
+										.icon.check
+									td
+										.icon.check
+									td
+										.icon.check
+								tr.prop-name-mobile
+									td(colspan="3")
+										.icon-wrap
+											.icon.lamp
+										span.prop Đèn ngủ
+								tr
+									td.prop-name
+										.icon-wrap
+											.icon.lamp
+										span.prop Đèn ngủ
+									td
+										.icon.check
+									td
+										.icon.check
+									td
+										.icon.check
+								tr.prop-name-mobile
+									td(colspan="3")
+										.icon-wrap
+											.icon.cusion
+										span.prop Gối, chăn, ga trải giường
+								tr
+									td.prop-name
+										.icon-wrap
+											.icon.cusion
+										span.prop Gối, chăn, ga trải giường
+									td
+										.icon.check
+									td
+										.icon.check
+									td
+										.icon.check
+								tr.prop-name-mobile
+									td(colspan="3")
+										.icon-wrap
+											.icon.cupboard
+										span.prop Tủ quần áo
+								tr
+									td.prop-name
+										.icon-wrap
+											.icon.cupboard
+										span.prop Tủ quần áo
+									td
+										.icon.check
+									td
+										.icon.check
+									td
+										.icon.check
+								tr.prop-name-mobile
+									td(colspan="3")
+										.icon-wrap
+											.icon.hanger
+										span.prop Móc quần áo
+								tr
+									td.prop-name
+										.icon-wrap
+											.icon.hanger
+										span.prop Móc quần áo
+									td
+										.icon.check
+									td
+										.icon.check
+									td
+										.icon.check
+								tr.prop-name-mobile
+									td(colspan="3")
+										.icon-wrap
+											.icon.kettle
+										span.prop Bình đun nước
+								tr
+									td.prop-name
+										.icon-wrap
+											.icon.kettle
+										span.prop Bình đun nước
+									td
+										.icon.check
+									td
+										.icon.check
+									td
+										.icon.check
+								tr.prop-name-mobile
+									td(colspan="3")
+										.icon-wrap
+											.icon.sofa
+											.icon.sofa-a
+										span.prop Bồ bàn ghế sofa
+								tr
+									td.prop-name
+										.icon-wrap
+											.icon.sofa
+											.icon.sofa-a
+										span.prop Bộ bàn ghế sofa
+									td
+										.icon.check
+									td
+										.icon.check
+									td
+										.icon.check
+								tr
+									td.group-name(rowspan="10")
+										span THIẾT BỊ
+										br
+										span NHÀ TẮM
+									td.none.prop-name
+									td.none
+									td.none
+									td.none
+								tr.prop-name-mobile
+									td(colspan="3")
+										.icon-wrap
+											.icon.hair-dryer
+										span.prop Máy sấy tóc
+								tr
+									td.prop-name
+										.icon-wrap
+											.icon.hair-dryer
+										span.prop Máy sấy tóc
+									td
+										.icon.check
+									td
+										.icon.check
+									td
+										.icon.check
+								tr.prop-name-mobile
+									td(colspan="3")
+										.icon-wrap
+											.icon.shower
+										span.prop Thiết bị cao cấp ToTo
+								tr
+									td.prop-name
+										.icon-wrap
+											.icon.shower
+										span.prop Thiết bị cao cấp ToTo
+									td
+										.icon.check
+									td
+										.icon.check
+									td
+										.icon.check
+								tr.prop-name-mobile
+									td(colspan="3")
+										.icon-wrap
+											.icon.bath
+										span.prop Bồn tắm nằm
+								tr
+									td.prop-name
+										.icon-wrap
+											.icon.bath
+										span.prop Bồn tắm nằm
+									td
+									td
+									td
+										.icon.check
+								tr.prop-name-mobile
+									td(colspan="3")
+										.icon-wrap
+											.icon.brush
+										span.prop Kem + bàn chải đánh răng
+								tr
+									td.prop-name
+										.icon-wrap
+											.icon.brush
+										span.prop Kem + bàn chải đánh răng
+									td
+										.icon.check
+									td
+										.icon.check
+									td
+										.icon.check
+								tr.prop-name-mobile
+									td(colspan="3")
+										.icon-wrap
+											.icon.sampoo
+										span.prop Sữa tắm + dầu gội
+								tr
+									td.prop-name
+										.icon-wrap
+											.icon.sampoo
+										span.prop Sữa tắm + dầu gội
+									td
+										.icon.check
+									td
+										.icon.check
+									td
+										.icon.check
+								tr.prop-name-mobile
+									td(colspan="3")
+										.icon-wrap
+											.icon.swab
+										span.prop Tăm bông
+								tr
+									td.prop-name
+										.icon-wrap
+											.icon.swab
+										span.prop Tăm bông
+									td
+										.icon.check
+									td
+										.icon.check
+									td
+										.icon.check
+								tr.prop-name-mobile
+									td(colspan="3")
+										.icon-wrap
+											.icon.shave
+										span.prop Dao cạo râu
+								tr
+									td.prop-name
+										.icon-wrap
+											.icon.shave
+										span.prop Dao cạo râu
+									td
+										.icon.check
+									td
+										.icon.check
+									td
+										.icon.check
+								tr.prop-name-mobile
+									td(colspan="3")
+										.icon-wrap
+											.icon.bathrobe
+										span.prop Áo choàng
+								tr
+									td.prop-name
+										.icon-wrap
+											.icon.bathrobe
+										span.prop Áo choàng
+									td
+									td
+										.icon.check
+									td
+										.icon.check
+								tr.prop-name-mobile
+									td(colspan="3")
+										.icon-wrap
+											.icon.hair-brush
+										span.prop Lược chải đầu
+								tr
+									td.prop-name
+										.icon-wrap
+											.icon.hair-brush
+										span.prop Lược chải đầu
+									td
+										.icon.check
+									td
+										.icon.check
+									td
+										.icon.check
+								tr
+									td.group-name(rowspan="10")
+										span DỊCH VỤ
+										br
+										span TIỆN ÍCH
+									td.none.prop-name
+									td.none
+									td.none
+									td.none
+								tr.prop-name-mobile
+									td(colspan="3")
+										.icon-wrap
+											.icon.drinks
+										span.prop Nước khoáng, trà, cà phê hàng ngày
+								tr
+									td.prop-name
+										.icon-wrap
+											.icon.drinks
+										span.prop Nước khoáng, trà, cà phê hàng ngày
+									td
+										span Nước khoáng (2 chai)
+										br
+										span trà, cà phê miễn phí
+									td
+										span Nước khoáng (2 chai)
+										br
+										span trà, cà phê miễn phí
+									td
+										span Nước khoáng (2 chai)
+										br
+										span trà, cà phê miễn phí
+								tr.prop-name-mobile
+									td(colspan="3")
+										.icon-wrap
+											.icon.fruit
+										span.prop Dĩa trái cây
+								tr
+									td.prop-name
+										.icon-wrap
+											.icon.fruit
+										span.prop Dĩa trái cây
+									td
+										span Tuỳ chọn
+									td
+										span Tuỳ chọn
+									td
+										.icon.check
+								tr.prop-name-mobile
+									td(colspan="3")
+										.icon-wrap
+											.icon.hotel-service
+										span.prop Dịch vụ phòng từ 6h - 22h
+								tr
+									td.prop-name
+										.icon-wrap
+											.icon.hotel-service
+										span.prop Dịch vụ phòng từ 6h - 22h
+									td
+										.icon.check
+									td
+										.icon.check
+									td
+										.icon.check
+
+
+
+
+
+
+
+
+
+

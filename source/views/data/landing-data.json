@@ -1,0 +1,313 @@
+{
+  "block": {
+    "about01": {
+        "type": "text",
+        "content": "Chào mừng Quý khách đã đến với khách sạn Clam Seas. Nơi để bạn tận hưởng kỳ nghỉ dưỡng một cách trọn vẹn nhất với lòng hiếu khách hòa cùng vẻ đẹp biển khơi bất tận"
+      },
+    "about02": {
+        "type": "photo",
+        "content": "images/photos/ver2-about2.jpg"
+      },
+    "about03": {
+        "type": "texture",
+        "content": "images/texture/ver2-about1.jpg"
+      },
+    "about04": {
+        "type": "text",
+        "content": "Tọa lạc trên vị trí đẹp nhất của eo biển đường Phạm Văn Đồng, khiến Du khách có cảm giác như “Chỉ một bước tới biển”, để chạm chân trần trên dải cát mịn thoải êm từ muôn trùng sóng vỗ, để có sự thư thái nhất trong tâm hồn trước vẻ đẹp cuốn hút của biển cả. Không chỉ thế, nơi đây còn là trung tâm hội tụ của quần thể các Danh lam thắng cảnh độc đáo bậc nhất Nha Trang với bãi đá Hòn Chồng huyền thoại, tháp bà Ponagar đậm dấu ấn Chămpa, núi Cô Tiên cổ tích,…, Tất cả đem đến cho Quý khách trải nghiêm du lịch, nghỉ dưỡng trọn vẹn nhất trong tầm tay."
+      },
+    "about05": {
+        "type": "photo",
+        "content": "images/photos/ver2-about3.jpg"
+      },
+    "about06": {
+        "type": "texture",
+        "content": "images/texture/ver2-about2.jpg"
+      },
+    "about07": {
+        "type": "text",
+        "content": "Sự hài lòng của Khách hàng là phương châm phát triển của Calm Seas. Bởi thế, chúng tôi luôn dốc lòng phục vụ Quý khách từ sự tiếp đón thân thiện, nhiệt tình, đến phục vụ chuyên nghiệp, sáng tạo nhất. Với Calm Seas, mỗi du khách không chỉ là Quý nhân, mà còn như là một tri kỷ, người thân yêu quý trong gia đình đầy gắn bó."
+      },
+    "about08": {
+        "type": "photo",
+        "content": "images/photos/ver2-about4.jpg"
+      },
+    "about09": {
+        "type": "photo",
+        "content": "images/photos/ver2-about5.jpg"
+      },
+    "about10": {
+        "type": "photo",
+        "content": "images/photos/ver2-about6.jpg"
+      },
+    "about11": {
+        "type": "texture",
+        "content": "images/texture/ver2-about3.jpg"
+      },
+    "about12": {
+        "type": "text",
+        "content": "Calm Seas mở ra trước mắt Du khách với vẻ đẹp bất tận từ biển khơi.  Nơi để tâm hồn được trở nên hoàn toàn thư thái cùng người thân yêu khi được mãn nhãn trước đại dương đầy quyến rũ. Như chính những gì ấn tượng nhất mà Calm Seas đem đến Quý khách với “Breathtaking Ocean View”, thưởng thức ly Café ấm đượm ngắm bình minh, hay cùng người thân yêu chuyện trò, chiêm nghiệm cuộc sống trước biển khơi bao la trong không gian sang trọng, ấm cúng sẽ đem lại sự hài lòng mới mẻ nhất cho kỳ nghỉ trọn vẹn của Quý khách."
+      },
+    "about13": {
+        "type": "photo",
+        "content": "images/photos/ver2-about7.jpg"
+      },
+    "about14": {
+        "type": "photo",
+        "content": "images/photos/ver2-about8.jpg"
+      },
+    "about15": {
+        "type": "texture",
+        "content": "images/texture/ver2-about4.jpg"
+      },
+    "about16": {
+        "type": "text",
+        "content": "Nghỉ mình trong không gian tiện nghi, đầy đủ, được thiết kế hài hòa của căn phòng Quý khách sở hữu sau thời gian khám phá bên ngoài sẽ đem đến giây phút nghỉ ngơi, thư giãn trong tâm thế hưởng thụ những điều tuyệt vời nhất từ những giá trị con người đã tâm huyết kiến tạo. Trải nghiệm các thiết bị nội thất cao cấp và tận hưởng của 3 hạng phòng từ tiêu chuẩn đến cao cấp, với hướng nhìn ra biển xanh hay thành phố hiền hòa sẽ để lại ấn tượng khó phai trong lòng Du khách về Phố biển Nha Trang."
+      },
+    "about17": {
+        "type": "photo",
+        "content": "images/photos/ver2-about9.jpg"
+      },
+    "about18": {
+        "type": "photo",
+        "content": "images/photos/ver2-about10.jpg"
+      },
+    "about19": {
+        "type": "photo",
+        "content": "images/photos/ver2-about11.jpg"
+      },
+    "about20": {
+        "type": "photo",
+        "content": "images/photos/ver2-about12.jpg"
+      },
+    "about21": {
+        "type": "photo",
+        "content": "images/photos/ver2-about13.jpg"
+      },
+    "about22": {
+        "type": "photo",
+        "content": "images/photos/ver2-about1.jpg"
+      },
+    "accom01": {
+        "type": "photo",
+        "content": "images/photos/ver2-accom1.jpg"
+      },
+    "accom02": {
+        "type": "text",
+        "content": "Thưởng trọn vẻ đẹp thiên nhiên trong không gian kiến tạo"
+      },
+    "accom03": {
+        "type": "photo",
+        "content": "images/photos/ver2-accom2.jpg"
+      },
+    "accom04": {
+        "type": "text",
+        "content": "Phòng deluxe 1 giường"
+      },
+    "accom05": {
+        "type": "texture",
+        "content": "images/texture/ver2-accom3.jpg"
+      },
+    "accom06": {
+        "type": "text",
+        "content": "Với dụng ý đưa thiên nhiên tinh túy vào nội thất, để Du khách được thưởng trọn sự ưu ái của tạo hóa tại nơi mình sở hữu, không gian thiết kế đã tạo nên tâm điểm tuyệt đẹp, hướng nhìn ấn tượng."
+      },
+    "accom07": {
+        "type": "text",
+        "content": "Sự kiết hợp sáng tạo mà hài hòa từ không gian tổng thể đến tiểu tiết đều được chăm chút chú đáo sẽ làm Quý khách thỏa lòng nhất từ khi ngắm nhìn đến thực tế cảm nhận. Bởi thế Calm Sea như trở thành chốn mà ta mong trở về, như ngôi nhà ta tự làm chủ, để thả mình với sự thư thái trọn vẹn nhất."
+      },
+    "accom08": {
+        "type": "photo",
+        "content": "images/photos/ver2-accom3.jpg"
+      },
+    "accom09": {
+        "type": "text",
+        "content": "Phòng standard 1 giường"
+      },
+    "accom10": {
+        "type": "texture",
+        "content": "images/texture/ver2-accom1.jpg"
+      },
+    "accom11": {
+        "type": "text",
+        "content": "Không chỉ là sự đủ đầy đơn thuần, chúng tôi hướng đến cảm giác tận hưởng đem lại giá trị tinh thần quý giá. Với nền gỗ truyền thống chủ đạo không chỉ sửi ấm khi se lạnh, làm tươi mát những ngày hè; quan trọng hơn là đưa đến nét đẹp cổ điển, đem thiên nhiên gần gũi mà sang trọng gắn kết khéo léo với những tiện nghi hiện đại. Từng bình hoa nhỏ, ánh đèn phòng,… được lựa chọn bày trí đầy dụng ý sẽ đem lại không gian mới mẻ, hoàn hảo cho Du khách."
+      },
+    "accom12": {
+        "type": "photo",
+        "content": "images/photos/ver2-accom4.jpg"
+      },
+    "accom13": {
+        "type": "text",
+        "content": "Phòng deluxe 2 giường"
+      },
+    "accom14": {
+        "type": "texture",
+        "content": "images/texture/ver2-accom2.jpg"
+      },
+    "accom15": {
+        "type": "text",
+        "content": "Sự tiện nghi được kiến tạo từ tâm huyết con người đã đem đến chất lượng du lịch nghỉ dưỡng từ những điều nhỏ nhất. Nền đá cao cấp không chỉ là hiện diện của chất lượng, mà còn đem lại sự sáng lạng tươi mới. Cùng với thiết bị tiêu chuẩn của Toto, những trang trí, thiết kế thực dụng mà đầy nghệ thuật,… chúng tôi luôn hướng đến chất lượng dịch vụ cao nhất."
+      },
+    "accom16": {
+        "type": "photo",
+        "content": "images/photos/ver2-accom5.jpg"
+      },
+    "accom17": {
+        "type": "photo",
+        "content": "images/photos/ver2-accom7.jpg"
+      },
+    "res01": {
+        "type": "photo",
+        "content": "images/photos/ver2-restaurant1.jpg"
+      },
+    "res02": {
+        "type": "text",
+        "content": "Vị quê hương hòa cùng ẩm thực hiện đại"
+      },
+    "res03": {
+        "type": "text",
+        "content": "Với không gian khoáng đạt, tầm nhìn toàn cảnh hướng biển sẽ khiến Bạn trở nên  mãn nguyện hơn bao giờ hết khi thưởng thức món ngon tại Calm Seas. Với chúng tôi, mỗi Du khách là từng cá nhân có sở thích, cá tính riêng biệt; chính vì thế Calm Seas luôn dốc lòng thấu hiểu, phục vụ Quý khách theo cái tôi đáng trân trọng ấy.  Khám phá Nha Trang qua cảm nhận hương vị đặc biệt sẽ thật thú vị và ý nghĩa bởi ẩm thực luôn là một trải nghiệm du lịch độc đáo."
+      },
+    "res04": {
+        "type": "photo",
+        "content": "images/photos/ver2-restaurant4.jpg"
+      },
+    "res05": {
+        "type": "photo",
+        "content": "images/photos/ver2-restaurant3.jpg"
+      },
+    "res06": {
+        "type": "photo",
+        "content": "images/photos/ver2-restaurant2.jpg"
+      },
+    "res07": {
+        "type": "texture",
+        "content": "images/texture/vi-discovery.png"
+      },
+    "res08": {
+        "type": "text",
+        "content": "BUFFET"
+      },
+    "res09": {
+        "type": "photo",
+        "content": "images/photos/ver2-restaurant7.jpg"
+      },
+    "res10": {
+        "type": "photo",
+        "content": "images/photos/ver2-restaurant5.jpg"
+      },
+    "res11": {
+        "type": "photo",
+        "content": "images/photos/ver2-restaurant6.jpg"
+      },
+    "res12": {
+        "type": "texture",
+        "content": "images/texture/vi-fresh.png"
+      },
+    "res13": {
+        "type": "text",
+        "content": "Mỗi sớm mai thức dậy, vươn mình cùng ánh bình minh lên cao cùng làn sóng trập trùng  khiến tâm hồn Du khách trở nên đầy hứng thú cho một ngày trải nghiệm nghỉ dưỡng và khám phá.  Bữa sáng tùy chọn mà CalmSeas thiết đãi sẽ tiếp thêm lửa cho cao trào cảm xúc ấy, qua thực đơn tùy chọn phong phú theo từng khẩu vị và không gian bày trí hài hòa, để Du khách có thể thưởng trọn vẻ đẹp từ đại dương bao la, khơi nguồn cảm hứng bất tận cho ngày mới."
+      },
+    "res14": {
+        "type": "texture",
+        "content": "images/texture/vi-discovery.png"
+      },
+    "res15": {
+        "type": "text",
+        "content": "A LA CART"
+      },
+    "res16": {
+        "type": "photo",
+        "content": "images/photos/ver2-restaurant8.jpg"
+      },
+    "res17": {
+        "type": "texture",
+        "content": "images/texture/vi-taste.png"
+      },
+    "res18": {
+        "type": "text",
+        "content": "Như nhịp điệu thường ngày của cuộc sống, Calm Seas đem đến Quý Khách bữa trưa đầy hấp dẫn, tươi mới. Sở hữu không gian khoáng đạt, sự phục vụ tận tình với những món ngon đúng điệu theo thị hiếu riêng của từng Du khách, Calm Seas đã trở thành một chốn để ta mong trở về, nơi gia đình, bạn bè đàm đạo, chia sẻ bên bàn ăn ấm cúng, rộn tiếng cười, để tiếp thêm nguồn cảm hứng cho hành trình du lịch mới."
+      },
+    "res19": {
+        "type": "photo",
+        "content": "images/photos/ver2-restaurant9.jpg"
+      },
+    "res20": {
+        "type": "photo",
+        "content": "images/photos/ver2-restaurant10.jpg"
+      },
+    "res21": {
+        "type": "photo",
+        "content": "images/photos/ver2-restaurant11.jpg"
+      },
+    "res22": {
+        "type": "texture",
+        "content": "images/texture/vi-discovery.png"
+      },
+    "res23": {
+        "type": "text",
+        "content": "BỮA TỐI"
+      },
+    "res24": {
+        "type": "photo",
+        "content": "images/photos/ver2-restaurant14.jpg"
+      },
+    "res25": {
+        "type": "photo",
+        "content": "images/photos/ver2-restaurant12.jpg"
+      },
+    "res26": {
+        "type": "texture",
+        "content": "images/texture/vi-delicious.png"
+      },
+    "res27": {
+        "type": "text",
+        "content": "Thưởng thức bữa tối đầy lãng mạn với ánh nến lung linh, ly rượu thơm nồng, ngắm nhìn nhịp sống biển đêm bên người thân yêu sẽ đưa Quý khách đến với trải nghiệm du lịch mới đầy cảm xúc. Khi đó mỗi món ngon sẽ trở  tuyệt vời hơn bao giờ hết vì đã gắn kết tạo nên những ý nghĩa, kỷ niệm ấn tượng cho kỳ nghỉ trọn vẹn."
+      },
+    "res28": {
+        "type": "photo",
+        "content": "images/photos/ver2-restaurant13.jpg"
+      },
+    "res29": {
+        "type": "texture",
+        "content": "images/texture/vi-discovery.png"
+      },
+    "res30": {
+        "type": "text",
+        "content": "THỰC ĐƠN"
+      },
+    "res31": {
+        "type": "text",
+        "content": "Thưởng thức món ăn không chỉ là trải nghiệm đơn thuần về ẩm thực mà  mà đây  còn là hiện hữu của bản sắc, văn hóa của mỗi địa danh. Mời Quý khách  khám phá những dòng ẩm thực đầy cuốn hút qua tài năng, sự tính tế của các đầu bếp Calm Seas đã thổi hồn đưa các món ngon trở thành những tác phẩm nghệ thuật ấn tượng nhất."
+      },
+    "res32": {
+        "type": "text",
+        "content": "Tại Nhà hàng của Khách sạn, Du khách có thể thỏa lòng nếm trải hương vị ẩm thực Á, Âu, các Vùng, Miền trên dải đất hình chữ S, đặc biệt là những đặc sản đã trở thành Thương hiệu của Phố biển Nha Trang."
+      },
+    "res33": {
+        "type": "text",
+        "content": "Thực khách vui lòng click để xem thực đơn"
+      },
+    "res34": {
+        "type": "text",
+        "content": "<a href='vi/menu/thuc-don-nha-hang.pdf'>Nhà hàng</a> - <a href='vi/menu/thuc-don-tre-em.pdf'>Trẻ em</a> - <a href='vi/menu/thuc-don-nuoc-uong.pdf'>Thức uống</a>"
+      },
+    "res35": {
+        "type": "photo",
+        "content": "images/photos/ver2-restaurant16.jpg"
+      },
+    "res36": {
+        "type": "photo",
+        "content": "images/photos/ver2-restaurant17.jpg"
+      },
+    "res37": {
+        "type": "photo",
+        "content": "images/photos/ver2-restaurant18.jpg"
+      },
+    "res38": {
+        "type": "photo",
+        "content": "images/photos/ver2-restaurant19.jpg"
+      }
+
+  }
+}

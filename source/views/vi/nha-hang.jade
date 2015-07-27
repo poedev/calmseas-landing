@@ -6,131 +6,123 @@ block vars
 	-menuIndex = 0
 
 block container
-	.body-container
-		.main-banner(style="background-image: url(images/photos/ver2-restaurant1.jpg);background-size: cover")
+	.body-container(ng-controller="page-content")
+		.main-banner(editable-block data-block-id="res01" data-type="{{pageContent.res01.type}}" style="background-image: url({{pageContent.res01.content}});background-size: cover;")
 			.left-strian.hide
 			.right-strian.hide
 		#main-container
-			h1.main-title(style="margin-top:25px")
-				span Vị quê hương hòa cùng ẩm thực hiện đại
-				
-			p.main-desc	Với không gian khoáng đạt, tầm nhìn toàn cảnh hướng biển sẽ khiến Bạn trở nên  mãn nguyện hơn bao giờ hết khi thưởng thức món ngon tại Calm Seas. Với chúng tôi, mỗi Du khách là từng cá nhân có sở thích, cá tính riêng biệt; chính vì thế Calm Seas luôn dốc lòng thấu hiểu, phục vụ Quý khách theo cái tôi đáng trân trọng ấy.  Khám phá Nha Trang qua cảm nhận hương vị đặc biệt sẽ thật thú vị và ý nghĩa bởi ẩm thực luôn là một trải nghiệm du lịch độc đáo.
+			h1.main-title(style="margin-top:25px" editable-block data-block-id="res02" data-type="{{pageContent.res02.type}}")
+				span {{pageContent.res02.content}}
+			p.main-desc(editable-block data-block-id="res03" data-type="{{pageContent.res03.type}}") {{pageContent.res03.content}}
 			.row.img-set.set1
 				.cell.col-sm-3.no-pad(style="padding-right: 3px")
-					img(src="images/photos/ver2-restaurant4.jpg" alt="calmseas restaurant")
+					img(editable-block data-block-id="res04" data-type="{{pageContent.res04.type}}" src="{{pageContent.res04.content}}" alt="calmseas restaurant")
 				.cell.col-sm-5.no-pad(style="padding-right: 3px")
-					img(src="images/photos/ver2-restaurant3.jpg" alt="calmseas restaurant")
+					img(editable-block data-block-id="res05" data-type="{{pageContent.res05.type}}" src="{{pageContent.res05.content}}" alt="calmseas restaurant")
 				.cell.col-sm-4.no-pad
-					img(src="images/photos/ver2-restaurant2.jpg" alt="calmseas restaurant")
+					img(editable-block data-block-id="res06" data-type="{{pageContent.res06.type}}" src="{{pageContent.res06.content}}" alt="calmseas restaurant")
 
 			.set-title.col-xs-12
-				.discover 
-					img(src="images/texture/vi-discovery.png" alt="restaurant")
-				.text BUFFET
+				.discover(editable-block data-block-id="res07" data-type="{{pageContent.res07.type}}")
+					img(src="{{pageContent.res07.content}}" alt="restaurant")
+				.text(editable-block data-block-id="res08" data-type="{{pageContent.res08.type}}") {{pageContent.res08.content}}
 			.clearfix
 			.row.img-set.set2
 				.cell.line2.col-xs-12.max-full.visible-xs
-					img(src="images/photos/ver2-restaurant7.jpg" alt="calmseas restaurant")
+					img(src="{{pageContent.res09.content}}" alt="calmseas restaurant")
 				.cell.full-height.col-sm-5.hidden-xs(style="padding-right: 30px")
-					img(src="images/photos/ver2-restaurant5.jpg" alt="restaurant")
+					img(editable-block data-block-id="res10" data-type="{{pageContent.res10.type}}" src="{{pageContent.res10.content}}" alt="restaurant")
 				.cell.col-sm-7
 					.cell.line1.col-xs-12
 						.cell.col-sm-6.hidden-xs
-							img(src="images/photos/ver2-restaurant6.jpg" alt="calmseas restaurant")
+							img(editable-block data-block-id="res11" data-type="{{pageContent.res11.type}}" src="{{pageContent.res11.content}}" alt="calmseas restaurant")
 						.cell.col-sm-6
 							.til
-								img(src="images/texture/vi-fresh.png" alt="restaurant")
-							p Mỗi sớm mai thức dậy, vươn mình cùng ánh bình minh lên cao cùng làn sóng trập trùng  khiến tâm hồn Du khách trở nên đầy hứng thú cho một ngày trải nghiệm nghỉ dưỡng và khám phá.  Bữa sáng tùy chọn mà CalmSeas thiết đãi sẽ tiếp thêm lửa cho cao trào cảm xúc ấy, qua thực đơn tùy chọn phong phú theo từng khẩu vị và không gian bày trí hài hòa, để Du khách có thể thưởng trọn vẻ đẹp từ đại dương bao la, khơi nguồn cảm hứng bất tận cho ngày mới.
+								img(editable-block data-block-id="res12" data-type="{{pageContent.res12.type}}" src="{{pageContent.res12.content}}" alt="restaurant")
+							p(editable-block data-block-id="res13" data-type="{{pageContent.res13.type}}") {{pageContent.res13.content}}
 						.cell.col-sm-6.visible-xs
-							img(src="images/photos/ver2-restaurant6.jpg" alt="calmseas restaurant")
+							img(src="{{pageContent.res11.content}}" alt="calmseas restaurant")
 						.clearfix
 					.cell.line2.col-xs-12.max-full.hidden-xs
-						img(src="images/photos/ver2-restaurant7.jpg" alt="calmseas restaurant")
+						img(editable-block data-block-id="res09" data-type="{{pageContent.res09.type}}" src="{{pageContent.res09.content}}" alt="calmseas restaurant")
 				.cell.full-height.col-sm-5(style="padding-right: 30px").visible-xs
-					img(src="images/photos/ver2-restaurant5.jpg" alt="restaurant")
+					img(src="{{pageContent.res10.content}}" alt="restaurant")
 					.clearfix
 				.clearfix
 			.set-title.col-xs-12
-				.discover 
-					img(src="images/texture/vi-di	scovery.png" alt="restaurant")
-				.text A LA CART
+				.discover(editable-block data-block-id="res14" data-type="{{pageContent.res14.type}}")
+					img(src="{{pageContent.res14.content}}" alt="restaurant")
+				.text(editable-block data-block-id="res15" data-type="{{pageContent.res15.type}}") {{pageContent.res15.content}}
 			.clearfix
 			.row.img-set.set2.set2-2
 				.cell.col-sm-4(style="padding-right: 20px")
 					.cell.line3.col-xs-12
-						img(src="images/photos/ver2-restaurant8.jpg" alt="restaurant")				
-					.cell.line4.col-xs-12				
+						img(editable-block data-block-id="res16" data-type="{{pageContent.res16.type}}" src="{{pageContent.res16.content}}" alt="restaurant")
+					.cell.line4.col-xs-12
 						.cell.col-xs-12
 							.til
-								img(src="images/texture/vi-taste.png" alt="restaurant")
-							p Như nhịp điệu thường ngày của cuộc sống, Calm Seas đem đến Quý Khách bữa trưa đầy hấp dẫn, tươi mới. Sở hữu không gian khoáng đạt, sự phục vụ tận tình với những món ngon đúng điệu theo thị hiếu riêng của từng Du khách, Calm Seas đã trở thành một chốn để ta mong trở về, nơi gia đình, bạn bè đàm đạo, chia sẻ bên bàn ăn ấm cúng, rộn tiếng cười, để tiếp thêm nguồn cảm hứng cho hành trình du lịch mới. 
+								img(editable-block data-block-id="res17" data-type="{{pageContent.res17.type}}" src="{{pageContent.res17.content}}" alt="restaurant")
+							p(editable-block data-block-id="res18" data-type="{{pageContent.res18.type}}") {{pageContent.res18.content}}
 				.cell.col-sm-4(style="padding-right: 20px")
 					.cell.line5.col-xs-12
-						img(src="images/photos/ver2-restaurant9.jpg" alt="restaurant")				
+						img(editable-block data-block-id="res19" data-type="{{pageContent.res19.type}}" src="{{pageContent.res19.content}}" alt="restaurant")
 					.cell.line6.col-xs-12
-						img(src="images/photos/ver2-restaurant10.jpg" alt="restaurant")				
+						img(editable-block data-block-id="res20" data-type="{{pageContent.res20.type}}" src="{{pageContent.res20.content}}" alt="restaurant")
 				.cell.full-height.col-sm-4
-					img(src="images/photos/ver2-restaurant11.jpg" alt="restaurant")
+					img(editable-block data-block-id="res21" data-type="{{pageContent.res21.type}}" src="{{pageContent.res21.content}}" alt="restaurant")
 				.clearfix
 			.clearfix
 			.set-title.col-xs-12
-				.discover 
-					img(src="images/texture/vi-discovery.png" alt="restaurant")
-				.text BỮA TỐI
+				.discover(editable-block data-block-id="res22" data-type="{{pageContent.res22.type}}")
+					img(src="{{pageContent.res22.content}}" alt="restaurant")
+				.text(editable-block data-block-id="res23" data-type="{{pageContent.res23.type}}") {{pageContent.res23.content}}
 			.clearfix
 			.row.img-set.set2.set2-2
 				.cell.full-height.col-sm-3.visible-xs
-					img(src="images/photos/ver2-restaurant14.jpg" alt="restaurant" style="float:right;width: auto;height:auto")
+					img(src="{{pageContent.res24.content}}" alt="restaurant" style="float:right;width: auto;height:auto")
 				.cell.full-height.col-sm-4.hidden-xs(style="padding-right: 20px;")
-					.pic(style="background-image:url(images/photos/ver2-restaurant12.jpg);background-size:cover;background-position: center center);width:100%;height:100%;")
+					.pic(editable-block data-block-id="res25" data-type="{{pageContent.res25.type}}" style="background-image:url({{pageContent.res25.content}});background-size:cover;background-position: center center);width:100%;height:100%;")
 				.cell.col-sm-5(style="padding-right: 20px")
 					.cell.line7.col-xs-12
 						.cell.col-xs-12
 							.til
-								img(src="images/texture/vi-delicious.png" alt="restaurant")
-							p Thưởng thức bữa tối đầy lãng mạn với ánh nến lung linh, ly rượu thơm nồng, ngắm nhìn nhịp sống biển đêm bên người thân yêu sẽ đưa Quý khách đến với trải nghiệm du lịch mới đầy cảm xúc. Khi đó mỗi món ngon sẽ trở  tuyệt vời hơn bao giờ hết vì đã gắn kết tạo nên những ý nghĩa, kỷ niệm ấn tượng cho kỳ nghỉ trọn vẹn.
-					.cell.line8.col-xs-12				
-						img(src="images/photos/ver2-restaurant13.jpg" alt="restaurant")
+								img(editable-block data-block-id="res26" data-type="{{pageContent.res26.type}}" src="{{pageContent.res26.content}}" alt="restaurant")
+							p(editable-block data-block-id="res27" data-type="{{pageContent.res27.type}}") {{pageContent.res27.content}}
+					.cell.line8.col-xs-12
+						img(editable-block data-block-id="res28" data-type="{{pageContent.res28.type}}" src="{{pageContent.res28.content}}" alt="restaurant")
 					.clearfix
 				.cell.full-height.col-sm-4.visible-xs(style="padding-right: 20px")
-					img(src="images/photos/ver2-restaurant12.jpg" alt="restaurant")
+					img(src="{{pageContent.res25.content}}" alt="restaurant")
 				.cell.full-height.col-sm-3.hidden-xs
-					img(src="images/photos/ver2-restaurant14.jpg" alt="restaurant" style="float:right;width: auto;height:auto")
+					img(editable-block data-block-id="res24" data-type="{{pageContent.res24.type}}" src="{{pageContent.res24.content}}" alt="restaurant" style="float:right;width: auto;height:auto")
 				.clearfix
 			.clearfix
 			.set-title.col-xs-12
-				.discover 
-					img(src="images/texture/vi-discovery.png" alt="restaurant")
-				.text THỰC ĐƠN
+				.discover
+					img(editable-block data-block-id="res29" data-type="{{pageContent.res29.type}}" src="{{pageContent.res29.content}}" alt="restaurant")
+				.text(editable-block data-block-id="res30" data-type="{{pageContent.res30.type}}") {{pageContent.res30.type}}
 			.clearfix
 			.row.img-set.set2.set2-3
 				.cell.col-sm-6(style="padding-right: 20px")
 					.cell.line9.col-xs-12
 						.cell.col-xs-12
-							p Thưởng thức món ăn không chỉ là trải nghiệm đơn thuần về ẩm thực mà  mà đây  còn là hiện hữu của bản sắc, văn hóa của mỗi địa danh. Mời Quý khách  khám phá những dòng ẩm thực đầy cuốn hút qua tài năng, sự tính tế của các đầu bếp Calm Seas đã thổi hồn đưa các món ngon trở thành những tác phẩm nghệ thuật ấn tượng nhất.
-							p Tại Nhà hàng của Khách sạn, Du khách có thể thỏa lòng nếm trải hương vị ẩm thực Á, Âu, các Vùng, Miền trên dải đất hình chữ S, đặc biệt là những đặc sản đã trở thành Thương hiệu của Phố biển Nha Trang.
-							p 
-								span Thực khách vui lòng click để xem thực đơn
+							p(editable-block data-block-id="res31" data-type="{{pageContent.res31.type}}") {{pageContent.res31.content}}
+							p(editable-block data-block-id="res32" data-type="{{pageContent.res32.type}}") {{pageContent.res32.content}}
+							p
+								span(editable-block data-block-id="res33" data-type="{{pageContent.res33.type}}") {{pageContent.res33.content}}
 								br
-								a(href="vi/menu/thuc-don-nha-hang.pdf") Nhà hàng
-								span - 
-								span &nbsp;
-								a(href="vi/menu/thuc-don-tre-em.pdf") Trẻ em 
-								span - 
-								span &nbsp;
-								a(href="vi/menu/thuc-don-nuoc-uong.pdf") Nước uống
-					.clearfix
-					.cell.line10.col-xs-12(style="background-image: url(images/photos/ver2-restaurant15.jpg);background-position:center;background-size:contain;background-repeat: no-repeat;width: 130%;margin-left: -30%;")			
-				.cell.full-height.col-sm-3(style="padding-right: 20px")
-					.cell.line9.col-xs-12
-						img(src="images/photos/ver2-restaurant16.jpg" alt="restaurant")			
-					.cell.line11.col-xs-12
-						img(src="images/photos/ver2-restaurant17.jpg" alt="restaurant")			
+								span(editable-block data-block-id="res34" data-type="{{pageContent.res34.type}}") {{pageContent.res34.content}}
 					.clearfix
 				.cell.full-height.col-sm-3(style="padding-right: 20px")
 					.cell.line9.col-xs-12
-						img(src="images/photos/ver2-restaurant18.jpg" alt="restaurant")		
+						img(editable-block data-block-id="res35" data-type="{{pageContent.res35.type}}" src="{{pageContent.res35.content}}" alt="restaurant")
 					.cell.line11.col-xs-12
-						img(src="images/photos/ver2-restaurant19.jpg" alt="restaurant")
+						img(editable-block data-block-id="res36" data-type="{{pageContent.res36.type}}" src="{{pageContent.res36.content}}" alt="restaurant")
+					.clearfix
+				.cell.full-height.col-sm-3(style="padding-right: 20px")
+					.cell.line9.col-xs-12
+						img(editable-block data-block-id="res37" data-type="{{pageContent.res37.type}}" src="{{pageContent.res37.content}}" alt="restaurant")
+					.cell.line11.col-xs-12
+						img(editable-block data-block-id="res38" data-type="{{pageContent.res38.type}}" src="{{pageContent.res38.content}}" alt="restaurant")
 					.clearfix
 			.clearfix
