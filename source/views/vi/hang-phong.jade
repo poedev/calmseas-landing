@@ -6,53 +6,53 @@ block vars
 	-menuIndex = 0
 
 block container
-	.body-container
+	.body-container(ng-controller="page-content")
 		#grid-style1
-			.main-banner.about(style="background-image: url(images/photos/ver2-accom1.jpg);background-size: cover;")
+			.main-banner.about(editable-block data-block-id="accom01" data-type="{{pageContent.accom01.type}}" style="background-image: url({{pageContent.accom01.content}});background-size: cover;")
 				.left-strian.hide
 				.right-strian.hide
 			#main-container
 				.accom-intro-text
-					h2 Thưởng trọn vẻ đẹp thiên nhiên trong không gian kiến tạo			
+					h2(editable-block data-block-id="accom01" data-type="{{pageContent.accom02.type}}") {{pageContent.accom02.content}}
 				.brief-pic-block.brief-block5.no-pad.col-xs-12
 					.block.block11.full-height.no-pad.col-sm-7
-						.pic.no-pad.pic-accom-1.col-xs-12.hidden-xs
-							.caption Phòng deluxe 1 giường
-						img(src="images/photos/ver2-accom2.jpg" alt="calmseas hotel").col-xs-12.visible-xs.no-pad
+						.pic.no-pad.pic-accom-1.col-xs-12.hidden-xs(editable-block data-block-id="accom03" data-type="{{pageContent.accom03.type}}" style="background-image: url({{pageContent.accom03.content}})")
+							.caption(editable-block data-block-id="accom04" data-type="{{pageContent.accom04.type}}") {{pageContent.accom04.content}}
+						img(src="{{pageContent.accom03.content}}" alt="calmseas hotel").col-xs-12.visible-xs.no-pad
 					.block.block12.full-height.no-pad.col-sm-5
 						.text-block.full-height.text-block-accom-1.col-xs-12
 							h2
-								img(src="images/texture/ver2-accom3.jpg")
-							p Với dụng ý đưa thiên nhiên tinh túy vào nội thất, để Du khách được thưởng trọn sự ưu ái của tạo hóa tại nơi mình sở hữu, không gian thiết kế đã tạo nên tâm điểm tuyệt đẹp, hướng nhìn ấn tượng. 
-							p Sự kiết hợp sáng tạo mà hài hòa từ không gian tổng thể đến tiểu tiết đều được chăm chút chú đáo sẽ làm Quý khách thỏa lòng nhất từ khi ngắm nhìn đến thực tế cảm nhận. Bởi thế Calm Sea như trở thành chốn mà ta mong trở về, như ngôi nhà ta tự làm chủ, để thả mình với sự thư thái trọn vẹn nhất.
+								img(src="{{pageContent.accom05.content}}" editable-block data-block-id="accom05" data-type="{{pageContent.accom05.type}}")
+							p(editable-block data-block-id="accom06" data-type="{{pageContent.accom06.type}}") {{pageContent.accom06.content}}
+							p(editable-block data-block-id="accom07" data-type="{{pageContent.accom07.type}}") {{pageContent.accom07.content}}
 				.block.block11.full-height.no-pad.col-sm-7.visible-xs
 					.pic.no-pad.pic-accom-1.col-xs-12
 				.brief-pic-block.brief-block6.no-pad.col-xs-12
 					.block.block11.full-height.no-pad.col-sm-3
-						.pic.no-pad.pic-accom-2.col-xs-12.hidden-xs
-							.caption Phòng standard 1 giường
-						img(src="images/photos/ver2-accom3.jpg" alt="calmseas hotel").col-xs-12.visible-xs.no-pad
+						.pic.no-pad.pic-accom-2.col-xs-12.hidden-xs(editable-block data-block-id="accom08" data-type="{{pageContent.accom08.type}}" style="background-image: url({{pageContent.accom08.content}})")
+							.caption(editable-block data-block-id="accom09" data-type="{{pageContent.accom09.type}}") {{pageContent.accom09.content}}
+						img(src="{{pageContent.accom08.content}}" alt="calmseas hotel").col-xs-12.visible-xs.no-pad
 					.block.block12.full-height.no-pad.col-sm-4
 						.text-block.full-height.text-block-accom-2.col-xs-12
-							h2 	
-								img(src="images/texture/ver2-accom1.jpg")
-							p Không chỉ là sự đủ đầy đơn thuần, chúng tôi hướng đến cảm giác tận hưởng đem lại giá trị tinh thần quý giá. Với nền gỗ truyền thống chủ đạo không chỉ sửi ấm khi se lạnh, làm tươi mát những ngày hè; quan trọng hơn là đưa đến nét đẹp cổ điển, đem thiên nhiên gần gũi mà sang trọng gắn kết khéo léo với những tiện nghi hiện đại. Từng bình hoa nhỏ, ánh đèn phòng,… được lựa chọn bày trí đầy dụng ý sẽ đem lại không gian mới mẻ, hoàn hảo cho Du khách.
+							h2(editable-block data-block-id="accom10" data-type="{{pageContent.accom10.type}}")
+								img(src="{{pageContent.accom10.content}}")
+							p(editable-block data-block-id="accom11" data-type="{{pageContent.accom11.type}}") {{pageContent.accom11.content}}
 					.block.block11.full-height.no-pad.col-sm-5
-						.pic.no-pad.pic-accom-3.col-xs-12
-							.caption Phòng deluxe 2 giường
-						img(src="images/photos/ver2-accom4.jpg" alt="calmseas hotel").col-xs-12.visible-xs.no-pad
+						.pic.no-pad.pic-accom-3.col-xs-12(editable-block data-block-id="accom12" data-type="{{pageContent.accom12.type}}" style="background-image: url({{pageContent.accom12.content}})")
+							.caption(editable-block data-block-id="accom13" data-type="{{pageContent.accom13.type}}") {{pageContent.accom13.content}}
+						img(src="{{pageContent.accom12.content}}" alt="calmseas hotel").col-xs-12.visible-xs.no-pad
 				.brief-pic-block.brief-block7.no-pad.col-xs-12
 					.block.block13.full-height.no-pad.col-sm-3
 						.text-block.full-height.text-block-accom-3.col-xs-12
-							h2 
-								img(src="images/texture/ver2-accom2.jpg")
-							p Sự tiện nghi được kiến tạo từ tâm huyết con người đã đem đến chất lượng du lịch nghỉ dưỡng từ những điều nhỏ nhất. Nền đá cao cấp không chỉ là hiện diện của chất lượng, mà còn đem lại sự sáng lạng tươi mới. Cùng với thiết bị tiêu chuẩn của Toto, những trang trí, thiết kế thực dụng mà đầy nghệ thuật,… chúng tôi luôn hướng đến chất lượng dịch vụ cao nhất.
+							h2(editable-block data-block-id="accom14" data-type="{{pageContent.accom14.type}}")
+								img(src="{{pageContent.accom14.content}}")
+							p(editable-block data-block-id="accom15" data-type="{{pageContent.accom15.type}}") {{pageContent.accom15.content}}
 					.block.block12.full-height.no-pad.col-sm-6
-						.pic.no-pad.pic-accom-4.col-xs-12
-					img(src="images/photos/ver2-accom5.jpg" alt="calmseas hotel").col-xs-12.visible-xs.no-pad
+						.pic.no-pad.pic-accom-4.col-xs-12(editable-block data-block-id="accom16" data-type="{{pageContent.accom16.type}}" style="background-image: url({{pageContent.accom16.content}})")
+					img(src="{{pageContent.accom16.content}}" alt="calmseas hotel").col-xs-12.visible-xs.no-pad
 					.block.block14.full-height.no-pad.col-sm-3
-						.pic.no-pad.pic-accom-5.col-xs-12
-					img(src="images/photos/ver2-accom7.jpg" alt="calmseas hotel").col-xs-12.visible-xs.no-pad
+						.pic.no-pad.pic-accom-5.col-xs-12((editable-block data-block-id="accom17" data-type="{{pageContent.accom17.type}}" style="background-image: url({{pageContent.accom17.content}})")
+					img(src="{{pageContent.accom17" alt="calmseas hotel").col-xs-12.visible-xs.no-pad
 				.clearfix
 				.accom-table-container.col-xs-12.no-pad
 					.table-wrap
@@ -69,7 +69,7 @@ block container
 									h3 DELUXE ROOM
 								th
 									h2 PHÒNG CAO CẤP
-									h3 SUITE ROOM	
+									h3 SUITE ROOM
 							tbody
 								tr.prop-name-mobile
 									td(colspan="3")
@@ -117,9 +117,9 @@ block container
 									td
 										span Giường đơn 1.4 x 2 (m)
 									td
-										span 1 giường đơn 1.8 x 2 (m) hoặc 
+										span 1 giường đơn 1.8 x 2 (m) hoặc
 										br
-										span 2 giường đơn 1 x 2 (m)		
+										span 2 giường đơn 1 x 2 (m)
 									td
 										span Giường King size 2 x 2 (m)
 										br
@@ -152,7 +152,7 @@ block container
 									td
 										span 1 người lớn
 										br
-										span 1 trẻ em dưới 5 tuổi	
+										span 1 trẻ em dưới 5 tuổi
 									td
 										span 3 người lớn
 										br
@@ -426,7 +426,7 @@ block container
 									td
 										.icon.check
 									td
-										.icon.check											
+										.icon.check
 								tr.prop-name-mobile
 									td(colspan="3")
 										.icon-wrap
@@ -456,7 +456,7 @@ block container
 									td
 									td
 									td
-										.icon.check											
+										.icon.check
 								tr.prop-name-mobile
 									td(colspan="3")
 										.icon-wrap
@@ -472,7 +472,7 @@ block container
 									td
 										.icon.check
 									td
-										.icon.check											
+										.icon.check
 								tr.prop-name-mobile
 									td(colspan="3")
 										.icon-wrap
@@ -488,7 +488,7 @@ block container
 									td
 										.icon.check
 									td
-										.icon.check											
+										.icon.check
 								tr.prop-name-mobile
 									td(colspan="3")
 										.icon-wrap
@@ -504,7 +504,7 @@ block container
 									td
 										.icon.check
 									td
-										.icon.check											
+										.icon.check
 								tr.prop-name-mobile
 									td(colspan="3")
 										.icon-wrap
@@ -533,9 +533,9 @@ block container
 										span.prop Áo choàng
 									td
 									td
-										.icon.check												
+										.icon.check
 									td
-										.icon.check												
+										.icon.check
 								tr.prop-name-mobile
 									td(colspan="3")
 										.icon-wrap
@@ -551,7 +551,7 @@ block container
 									td
 										.icon.check
 									td
-										.icon.check											
+										.icon.check
 								tr
 									td.group-name(rowspan="10")
 										span DỊCH VỤ
@@ -592,13 +592,13 @@ block container
 									td.prop-name
 										.icon-wrap
 											.icon.fruit
-										span.prop Dĩa trái cây	
-									td
-										span Tuỳ chọn									
+										span.prop Dĩa trái cây
 									td
 										span Tuỳ chọn
 									td
-										.icon.check											
+										span Tuỳ chọn
+									td
+										.icon.check
 								tr.prop-name-mobile
 									td(colspan="3")
 										.icon-wrap
@@ -614,13 +614,13 @@ block container
 									td
 										.icon.check
 									td
-										.icon.check											
+										.icon.check
 
-					
-			
 
-					
-			
+
+
+
+
 
 
 
