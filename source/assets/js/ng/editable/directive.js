@@ -3,7 +3,8 @@ angular.module('calmseas-landing')
     return {
       restrict: 'A',
       link: function(scope, elem){
-        var overlay = null;
+        var overlay = null,
+            elem = $(elem);
         $('body').append('<div class="editable-overlay"><div class="util-btn edit"><i class="fa fa-pencil"/></div></div>');
 
         overlay = $('.editable-overlay');
@@ -12,8 +13,22 @@ angular.module('calmseas-landing')
           .on('mouseleave', function(){
             $('.editable-overlay').stop().hide();
           });
-        console.log(overlay.find('.edit'));
         overlay.find('.edit').on('click.edit-block', function(){
+        });
+
+        // set util button events
+        overlay.find('.util-btn.edit').on('click', function(){
+          var overlay = $(this).closest('.editable-overlay'),
+              blockID = overlay.data('block-id'),
+              blockType = overlay.data('type'),
+              adminScope = angular.element('body').scope(),
+              textValue = scope.pageContent[blockID].content;
+          adminScope.$apply(function(){
+            adminScope.editorContent = {text: textValue};
+            adminScope.editingBlock = {id: blockID};
+          })
+
+          $(window).trigger('openCustomEdit', blockType);
         });
       }
     }
@@ -23,9 +38,13 @@ angular.module('calmseas-landing')
       restrict: 'A',
       link: function(scope, elem, self){
         elem.on('mouseenter', function(){
-          var area = $(this);
-          console.log("IN");
-          $('.editable-overlay').stop().show().css({
+          var area = $(this),
+              overlay = $('.editable-overlay');
+          overlay
+            .data('block-id', area.data('block-id'))
+            .data('type', area.data('type'));
+
+          overlay.stop().show().css({
             'width': area.outerWidth(),
             'height': area.outerHeight(),
             'top': area.offset().top,

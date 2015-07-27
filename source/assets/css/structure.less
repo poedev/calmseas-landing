@@ -1097,3 +1097,103 @@ footer {
     }
   }
 }
+
+.custom-editor {
+    width: 100%;
+    height: 300px;
+    max-height: 100%;
+    position: fixed;
+    overflow: hidden;
+    bottom: -100%;
+    left: 0px;
+    background-color: #ffffff;
+    border-top: 2px solid #c3c3c3;
+    z-index: 1111;
+
+    -webkit-transition: bottom 0.4s ease;
+    -moz-transition: bottom 0.4s ease;
+    -o-transition: bottom 0.4s ease;
+    transition: bottom 0.4s ease;
+
+    &.active {
+      bottom: 0px;
+    }
+
+    .relate-wrap {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      padding-top: 50px;
+    }
+
+    .drag-bar {
+      width: 100%;
+      height: 40px;
+      line-height: 40px;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      background-color: #333333;
+      cursor: ns-resize;
+      color: #ffffff;
+      .close {
+        float: right;
+        font-size: 1.5rem;
+        color: #fefefe;
+        cursor: pointer;
+        padding: 7px;
+        &:hover {
+          color: #ffffff;
+        }
+      }    
+    }
+
+    .content-container {
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      .content {
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding: 12px;
+        padding-left: 192px;
+        min-height: 100%;
+        .text-editor {
+          textarea {
+            width: 100%;
+            min-height: 150px;
+            padding: 12px;
+            line-height: 1.6rem;
+            font-size: 1rem;
+            border-radius: 6px;
+            border: 1px solid #cecece;
+            resize: vertical;
+          }
+        }
+        .side-panel {
+          width: 180px;
+          height: 100%;
+          position: absolute;
+          left: 0px;
+          top: 0px;
+          border-right: 1px solid #cccccc;
+          padding: 12px;
+          button { 
+            width: 100%;
+            height: 36px;
+            line-height: 36px;
+            color: #ffffff;
+            background-color: #1E88E5;
+            border: 0px;
+            font-size: 1rem;
+            margin-bottom: 12px;
+            i {
+              padding-right: 8px;
+
+            }
+          }
+        }
+      }
+    }
+}

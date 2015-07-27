@@ -1,4 +1,24 @@
-.custom-editor
-  .drag-bar
-  .title-bar
-  .content
+.custom-editor(custom-editor)
+	.relate-wrap
+		.drag-bar
+			.title
+			.close.fa.fa-close
+		.content-container
+			.content
+				.text-editor
+					.side-panel
+						button.save
+							i.fa.fa-save
+							span Save
+						button.preview
+							i.fa.fa-eye
+							span Preview
+						a(href="admin-upload-photos.php" target="_blank").photo-manager
+							button.photo
+								i.fa.fa-image
+								span Photo manager
+						a(href="admin-upload-texture.php" target="_blank").texture-manager
+							button.texture-manager
+								i.fa.fa-image
+								span Texture manager
+					textarea(ng-model="editorContent.text")

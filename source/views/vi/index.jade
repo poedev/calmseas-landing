@@ -6,70 +6,70 @@ block vars
 	-menuIndex = 0
 
 block container
-	.body-container
+	.body-container(ng-controller="page-content")
 		#grid-style1.index
-			.main-banner.about(style="background-image: url(images/photos/ver2-about1.jpg);background-size: cover")
+			.main-banner.about(style="background-image: url({{pageContent.about22.content}});background-size: cover" editable-block data-block-id="about22" data-type="{{pageContent.about22.type}}")
 				.left-strian.hide
 				.right-strian.hide
 			#main-container
-				.brief-text-block.col-xs-12(editable-block)
-					p.intro-text Chào mừng Quý khách đã đến với khách sạn Clam Seas. Nơi để bạn tận hưởng kỳ nghỉ dưỡng một cách trọn vẹn nhất với lòng hiếu khách hòa cùng vẻ đẹp biển khơi bất tận
+				.brief-text-block.col-xs-12(editable-block data-block-id="about01" data-type="{{pageContent.about01.type}}")
+					p.intro-text {{pageContent.about01.content}}
 				.clearfix
 				.brief-pic-block.brief-block1.no-pad.col-xs-12
 					.block.block1.full-height.no-pad.col-sm-7
-						.pic.no-pad.pic2.col-xs-12.hidden-xs(editable-block)
-						img(src="images/photos/ver2-about2.jpg" alt="calmseas hotel").col-xs-12.visible-xs.no-pad
+						.pic.no-pad.pic2.col-xs-12.hidden-xs(style="background-image: url({{pageContent.about02.content}})" editable-block data-block-id="about02" data-type="{{pageContent.about02.type}}")
+						img(src="{{pageContent.about02.content}}" alt="calmseas hotel").col-xs-12.visible-xs.no-pad
 					.block.block2.full-height.no-pad.col-sm-5
 						.text-block.full-height.text-block1.col-xs-12
-							h2(editable-block)
-								img(src="images/texture/ver2-about1.jpg")
-							p(editable-block) Tọa lạc trên vị trí đẹp nhất của eo biển đường Phạm Văn Đồng, khiến Du khách có cảm giác như “Chỉ một bước tới biển”, để chạm chân trần trên dải cát mịn thoải êm từ muôn trùng sóng vỗ, để có sự thư thái nhất trong tâm hồn trước vẻ đẹp cuốn hút của biển cả. Không chỉ thế, nơi đây còn là trung tâm hội tụ của quần thể các Danh lam thắng cảnh độc đáo bậc nhất Nha Trang với bãi đá Hòn Chồng huyền thoại, tháp bà Ponagar đậm dấu ấn Chămpa, núi Cô Tiên cổ tích,…, Tất cả đem đến cho Quý khách trải nghiêm du lịch, nghỉ dưỡng trọn vẹn nhất trong tầm tay.
+							h2(editable-block data-block-id="about03" data-type="{{pageContent.about03.type}}")
+								img(src="{{pageContent.about03.content}}" alt="calmseas hotel")
+							p(editable-block data-block-id="about04" data-type="{{pageContent.about04.type}}") {{pageContent.about04.content}}
 						.clearfix
-						.pic.no-pad.pic3.col-xs-12.hidden-xs(editable-block)
-							img(src="images/photos/ver2-about3.jpg" alt="calmseas hotel").col-xs-12.visible-xs.no-pad
+						.pic.no-pad.pic3.col-xs-12.hidden-xs(editable-block data-block-id="about05" data-type="{{pageContent.about05.type}}")
+						img(src="{{pageContent.about05.content}}" alt="calmseas hotel").col-xs-12.visible-xs.no-pad
 				.brief-pic-block.brief-block2.no-pad.col-xs-12
 					.block.block3.full-height.no-pad.col-sm-4
 						.text-block.full-height.text-block1.col-xs-12
-							h2
-								img(src="images/texture/ver2-about2.jpg")
-							p Sự hài lòng của Khách hàng là phương châm phát triển của Calm Seas. Bởi thế, chúng tôi luôn dốc lòng phục vụ Quý khách từ sự tiếp đón thân thiện, nhiệt tình, đến phục vụ chuyên nghiệp, sáng tạo nhất. Với Calm Seas, mỗi du khách không chỉ là Quý nhân, mà còn như là một tri kỷ, người thân yêu quý trong gia đình đầy gắn bó.
-						.pic.no-pad.pic4.col-xs-12.hidden-xs
-						img(src="images/photos/ver2-about4.jpg" alt="calmseas hotel").col-xs-12.visible-xs.no-pad
+							h2(editable-block data-block-id="about06" data-type="{{pageContent.about06.type}}")
+								img(src="{{pageContent.about06.content}}")
+							p(editable-block data-block-id="about07" data-type="{{pageContent.about07.type}}") {{pageContent.about07.content}}
+						.pic.no-pad.pic4.col-xs-12.hidden-xs(editable-block  data-block-id="about08" style="background-image: url({{pageContent.about08.content}})" data-type="{{pageContent.about06.type}}")
+						img(editable-block src="{{pageContent.about08.content}}" alt="calmseas hotel" data-type="{{pageContent.about06.type}}").col-xs-12.visible-xs.no-pad
 					.block.block4.full-height.no-pad.col-sm-8
-						.pic.no-pad.pic5.col-xs-12.hidden-xs
-						img(src="images/photos/ver2-about6.jpg" alt="calmseas hotel").col-xs-12.visible-xs.no-pad
+						.pic.no-pad.pic5.col-xs-12.hidden-xs(editable-block  data-block-id="about09" style="background-image:url({{pageContent.about09.content}})" alt="calmseas hotel" data-type="{{pageContent.about09.type}}")
+						img(src="{{pageContent.about09.content}}" alt="calmseas hotel").col-xs-12.visible-xs.no-pad
 				.brief-pic-block.brief-block3.no-pad.col-xs-12
 					.block.block5.full-height.no-pad.col-sm-4
-						.pic.no-pad.pic6.col-xs-12.hidden-xs
-						img(src="images/photos/ver2-about6.jpg" alt="calmseas hotel").col-xs-12.visible-xs.no-pad
+						.pic.no-pad.pic6.col-xs-12.hidden-xs(editable-block data-block-id="about10" style="background-image:url({{pageContent.about10.content}})" alt="calmseas hotel" data-type="{{pageContent.about10.type}}")
+						img(src="{{pageContent.about10.content}}" alt="calmseas hotel").col-xs-12.visible-xs.no-pad
 					.block.block6.full-height.no-pad.col-sm-4
 						.text-block.full-height.text-block3.col-xs-12
 							h2
-								img(src="images/texture/ver2-about3.jpg")
-							p Calm Seas mở ra trước mắt Du khách với vẻ đẹp bất tận từ biển khơi.  Nơi để tâm hồn được trở nên hoàn toàn thư thái cùng người thân yêu khi được mãn nhãn trước đại dương đầy quyến rũ. Như chính những gì ấn tượng nhất mà Calm Seas đem đến Quý khách với “Breathtaking Ocean View”, thưởng thức ly Café ấm đượm ngắm bình minh, hay cùng người thân yêu chuyện trò, chiêm nghiệm cuộc sống trước biển khơi bao la trong không gian sang trọng, ấm cúng sẽ đem lại sự hài lòng mới mẻ nhất cho kỳ nghỉ trọn vẹn của Quý khách.
-						.pic.no-pad.pic7.col-xs-12.hidden-xs
-						img(src="images/photos/ver2-about7.jpg" alt="calmseas hotel").col-xs-12.visible-xs.no-pad
+								img(editable-block data-block-id="about11" src="{{pageContent.about11.content}}" alt="calmseas hotel" data-type="{{pageContent.about11.type}}")
+							p(editable-block data-block-id="about12" data-type="{{pageContent.about12.type}}") {{pageContent.about12.content}}
+						.pic.no-pad.pic7.col-xs-12.hidden-xs(editable-block data-block-id="about13" style="background-image:url({{pageContent.about13.content}})" alt="calmseas hotel" data-type="{{pageContent.about13.type}}")
+						img(src="{{pageContent.about13.content}}" alt="calmseas hotel").col-xs-12.visible-xs.no-pad
 					.block.block7.full-height.no-pad.col-sm-4
-						.pic.no-pad.pic8.col-xs-12
+						.pic.no-pad.pic8.col-xs-12(editable-block data-block-id="about14" style="background-image:url({{pageContent.about14.content}})" alt="calmseas hotel" data-type="{{pageContent.about14.type}}")
 				.brief-text-block.block-grey.col-xs-12
 					h2
-						img(src="images/texture/ver2-about4.jpg")
-					p Nghỉ mình trong không gian tiện nghi, đầy đủ, được thiết kế hài hòa của căn phòng Quý khách sở hữu sau thời gian khám phá bên ngoài sẽ đem đến giây phút nghỉ ngơi, thư giãn trong tâm thế hưởng thụ những điều tuyệt vời nhất từ những giá trị con người đã tâm huyết kiến tạo. Trải nghiệm các thiết bị nội thất cao cấp và tận hưởng của 3 hạng phòng từ tiêu chuẩn đến cao cấp, với hướng nhìn ra biển xanh hay thành phố hiền hòa sẽ để lại ấn tượng khó phai trong lòng Du khách về Phố biển Nha Trang.
+						img(editable-block src="{{pageContent.about15.content}}" data-block-id="about15" alt="calmseas hotel" data-type="{{pageContent.about15.type}}")
+					p(editable-block data-block-id="about16" data-type="{{pageContent.about16.type}}") {{pageContent.about16.content}}
 				.clearfix
 				.brief-pic-block.brief-block4.no-pad.col-xs-12
 					.block.block9.full-height.no-pad.col-sm-4
-						.pic.no-pad.pic9.col-xs-12.hidden-xs
-						img(src="images/photos/ver2-about9.jpg" alt="calmseas hotel").col-xs-12.visible-xs.no-pad
-						.pic.no-pad.pic10.col-xs-12.hidden-xs
-						img(src="images/photos/ver2-about10.jpg" alt="calmseas hotel").col-xs-12.visible-xs.no-pad
+						.pic.no-pad.pic9.col-xs-12.hidden-xs(editable-block data-block-id="about17" style="background-image:url({{pageContent.about17.content}})" alt="calmseas hotel" data-type="{{pageContent.about17.type}}")
+						img(src="{{pageContent.about17.content}}" alt="calmseas hotel").col-xs-12.visible-xs.no-pad
+						.pic.no-pad.pic10.col-xs-12.hidden-xs(editable-block data-block-id="about18" style="background-image:url({{pageContent.about18.content}})" alt="calmseas hotel" data-type="{{pageContent.about18.type}}")
+						img(src="{{pageContent.about18.content}}" alt="calmseas hotel").col-xs-12.visible-xs.no-pad
 					.block.block9.full-height.no-pad.col-sm-4
-						.pic.no-pad.pic11.col-xs-12.hidden-xs
-						img(src="images/photos/ver2-about11.jpg" alt="calmseas hotel").col-xs-12.visible-xs.no-pad
+						.pic.no-pad.pic11.col-xs-12.hidden-xs(editable-block data-block-id="about19" style="background-image:url({{pageContent.about19.content}})" alt="calmseas hotel" data-type="{{pageContent.about19.type}}")
+						img(src="{{pageContent.about19.content}}" alt="calmseas hotel").col-xs-12.visible-xs.no-pad
 					.block.block10.full-height.no-pad.col-sm-4
-						.pic.no-pad.pic12.col-xs-12.hidden-xs
-						img(src="images/photos/ver2-about12.jpg" alt="calmseas hotel").col-xs-12.visible-xs.no-pad
-						.pic.no-pad.pic13.col-xs-12.hidden-xs
-						img(src="images/photos/ver2-about13.jpg" alt="calmseas hotel").col-xs-12.visible-xs.no-pad
+						.pic.no-pad.pic12.col-xs-12.hidden-xs(editable-block data-block-id="about20" style="background-image:url({{pageContent.about20.content}})" alt="calmseas hotel" data-type="{{pageContent.about20.type}}")
+						img(src="{{pageContent.about20.content}}" alt="calmseas hotel").col-xs-12.visible-xs.no-pad
+						.pic.no-pad.pic13.col-xs-12.hidden-xs(editable-block data-block-id="about21" style="background-image:url({{pageContent.about21.content}})" alt="calmseas hotel" data-type="{{pageContent.about21.type}}")
+						img(src="{{pageContent.about21.content}}" alt="calmseas hotel").col-xs-12.visible-xs.no-pad
 
 
 
