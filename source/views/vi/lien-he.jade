@@ -7,30 +7,39 @@ block vars
 
 block container
 	.body-container(ng-controller="page-content")
+		.main-banner(editable-block data-block-id="res01" data-type="{{pageContent.res01.type}}" style="background-image: url({{pageContent.res01.content}});background-size: cover;")
+			.left-strian.hide
+			.right-strian.hide
 		#main-container.contact
 			h1.title LIÊN HỆ
 			.clearfix
 			.contact-form-container.col-md-6
 				form(action="#" method="post")
-					input.form-control(placeholder="Họ và tên")
-					input.form-control(placeholder="Email")
-					input.form-control(placeholder="Tiêu đề")
+					input.form-control(type="text" placeholder="Họ và tên")
+					input.form-control(type="text" placeholder="Email")
+					input.form-control(type="text" placeholder="Tiêu đề")
 					textarea.form-control(placeholder="Nội dung")
+					input(type="submit" value="Gửi")
 
 			.contact-info-container.col-md-6
+				.map.col-xs-12.no-pad
+					iframe(frameborder="0", src="https://www.google.com/maps/embed?key=AIzaSyB3uqHUhv3mLckXYMGvCDXB6F9WCUpsL6A&pb=!1m18!1m12!1m3!1d974.65087690638!2d109.20191279718257!3d12.27508887145052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0xe24a7a48d7f8d0a2!2sCalm+Seas!5e0!3m2!1svi!2s!4v1433037556092")
+				.clearfix
 				ul.infos
-					li
-						i.fa.fa-map-marker
+					li.location
+						i
 						span.text
 							span Khách sạn Calmseas
 							br
-							span Địa chỉ: 99 Phạm Văn Đồng - Vĩnh Hải - Nha Trang - Khánh Hoà
-					li
-						i.fa.fa-phone
+							b Địa chỉ: 
+							span &nbsp;
+							span 99 Phạm Văn Đồng - Vĩnh Hải - Nha Trang - Khánh Hoà
+					li.phone
+						i
 						span.text
 							span (+84) (058) 3543 888
-					li
-						i.fa.fa-envelope
+					li.mail
+						i
 						span.text
 							span info@calmseashotel.com.vn
 			.clearfix

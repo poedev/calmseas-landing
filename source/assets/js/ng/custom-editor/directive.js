@@ -13,9 +13,6 @@ angular.module('calmseas-landing')
 				win.on('openCustomEdit', function(e, blockType){
 					elem
 						.addClass('active')
-						.remove	
-						.addClass('photo')
-						.data('blocktype', 'photo');
 				});
 				close.on('click', function(){
 					elem.removeClass('active').removeAttr('style');

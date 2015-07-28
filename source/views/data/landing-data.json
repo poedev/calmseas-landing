@@ -202,7 +202,7 @@
       },
     "res12": {
         "type": "texture",
-        "content": "images/texture/vi-fresh.png"
+        "content": "images/texture/vi-fresh.jpg"
       },
     "res13": {
         "type": "text",
@@ -222,7 +222,7 @@
       },
     "res17": {
         "type": "texture",
-        "content": "images/texture/vi-taste.png"
+        "content": "images/texture/vi-taste.jpg"
       },
     "res18": {
         "type": "text",

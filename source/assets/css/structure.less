@@ -177,7 +177,7 @@ a, a:visited {
 #main-container {
     max-width: 1200px;
     margin: auto;
-    padding-bottom: 150px;
+    padding-bottom: 20px;
     h1 {
       &.main-title {
         max-width: 770px;
@@ -253,7 +253,7 @@ a, a:visited {
       }
 
       &.set2 {
-        height: 500px;
+        height: 300px;
         .cell {
           .til {
             width: 100%;
@@ -966,25 +966,34 @@ footer {
         font-size: 2.6rem;
         color: #444444;
         padding: 40px 24px;
+        padding-top: 60px;
       }
     }
     .contact-form-container {
-      padding-right: 20px;
-      border-right: 3px dotted #c3c3c3;
+      padding-right: 100px;
       form {
         input, textarea {
           width: 100%;
           height: 50px;
           line-hegiht: 30px;
-          font-size: 1.1rem;
+          font-size: 1rem;
           padding: 10px;
           border-radius: 4px;
           border: 1px solid #d8d5d5;
           margin-top: 12px;
         }
 
+        input[type="submit"] {
+          width: auto;
+          float: right;
+          padding: 5px 28px;
+          border-radius: 7px;
+          background-color: #f7f5f5;
+          border: 1px solid #e5e3e3;
+        }
+
         textarea {
-          height: 110px;
+          height: 200px;
         }
       }
     }
@@ -993,17 +1002,49 @@ footer {
       color: #454545;
       font-size: 1.2rem;
       line-height: 1.6rem;
-      padding-left: 12px;
+      padding-left: 50px;
+      border-left: 3px dotted #c3c3c3;
+      .map {
+        position: relative;
+        iframe {
+          width: 100%;
+          height: 220px;
+        }
+      }
       ul {
         li {
           margin-top: 18px;
           position: relative;
-          padding-left: 40px;
+          padding-left: 82px;
+          font-size: 1rem;
+          &.phone {
+            i {
+              top: -25px;
+              background-image: url(../images/icons/contact-phone.png)            
+            }
+          }
+          &.location {            
+            padding-top: 12px;
+            i {
+              background-image: url(../images/icons/contact-location.png)
+            }
+          }
+          &.mail {    
+            padding-top: 12px;          
+            i {
+              top: -7px;
+              background-image: url(../images/icons/contact-mail.png)
+            }
+          }
           i {
             position: absolute;
-            left: 6px;
+            left: -10px;
+            width: 64px;
+            height: 64px;
+            background-size: cover;
             top: 0px;
             font-size: 1.8rem;
+            
           }
         }
       }

@@ -25,12 +25,19 @@ jQuery(function() {
   Site.publicMethod1();
 
 
-  var elem = document.querySelector('.grid');
-  if (elem) {
-    var msnry = new Masonry( elem, {
-      // options
+  var $elem = $('.grid');
+  if ($elem.length) {
+    var $mason = $elem.masonry({
       itemSelector: '.fac-wrap',
       percentPosition: true
+    });
+    $elem.find('img').each(function(){
+      $(this).get(0).onload = function(){
+        $mason.masonry( 'layout' );
+      };
+    });
+    $(window).on('resize.reloadMasonry', function(){
+      $mason.masonry( 'layout' );
     });
   }
 

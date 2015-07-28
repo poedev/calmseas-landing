@@ -5,31 +5,33 @@ angular.module('calmseas-landing')
       link: function(scope, elem){
         var overlay = null,
             elem = $(elem);
-        $('body').append('<div class="editable-overlay"><div class="util-btn edit"><i class="fa fa-pencil"/></div></div>');
+        if (elem.data('adoff') === undefined) {
+          $('body').append('<div class="editable-overlay"><div class="util-btn edit"><i class="fa fa-pencil"/></div></div>');
 
-        overlay = $('.editable-overlay');
+          overlay = $('.editable-overlay');
 
-        overlay
-          .on('mouseleave', function(){
-            $('.editable-overlay').stop().hide();
+          overlay
+            .on('mouseleave', function(){
+              $('.editable-overlay').stop().hide();
+            });
+          overlay.find('.edit').on('click.edit-block', function(){
           });
-        overlay.find('.edit').on('click.edit-block', function(){
-        });
 
-        // set util button events
-        overlay.find('.util-btn.edit').on('click', function(){
-          var overlay = $(this).closest('.editable-overlay'),
-              blockID = overlay.data('block-id'),
-              blockType = overlay.data('type'),
-              adminScope = angular.element('body').scope(),
-              textValue = scope.pageContent[blockID].content;
-          adminScope.$apply(function(){
-            adminScope.editorContent = {text: textValue};
-            adminScope.editingBlock = {id: blockID};
-          })
+          // set util button events
+          overlay.find('.util-btn.edit').on('click', function(){
+            var overlay = $(this).closest('.editable-overlay'),
+                blockID = overlay.data('block-id'),
+                blockType = overlay.data('type'),
+                adminScope = angular.element('body').scope(),
+                textValue = scope.pageContent[blockID].content;
+            adminScope.$apply(function(){
+              adminScope.editorContent = {text: textValue};
+              adminScope.editingBlock = {id: blockID};
+            })
 
-          $(window).trigger('openCustomEdit', blockType);
-        });
+            $(window).trigger('openCustomEdit', blockType);
+          });
+        }
       }
     }
   })
